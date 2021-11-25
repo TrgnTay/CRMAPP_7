@@ -1,4 +1,4 @@
 @login
 Feature: login
-  Scenario:
+  Scenario: Login
     Given  User logs in with valid credentials
