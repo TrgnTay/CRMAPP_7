@@ -21,7 +21,9 @@ public class PortpalStepDef {
 
     @When("clicks Add Mention icon")
     public void clicks_Add_Mention_icon() {
-new PortalPage().AdMtion();
+
+        //new PortalPage().AdMtion();
+        new PortalPage().AddMention.click();
     }
     @When("clicks Employees and Departments")
     public void clicks_Employees_and_Departments() {
@@ -41,8 +43,10 @@ new PortalPage().AdMtion();
     @Then("The input box should show descriptions containing {string} and {string}")
     public void the_input_box_should_show_descriptions_containing_and(String expectedUser1, String expectedUser2) {
 
-        String actualUser2= Driver.get().findElement(By.xpath("//span[.='Murat Kahveci'][@class='feed-add-post-destination-text']")).getText();
-        String actualUser1= Driver.get().findElement(By.xpath("//span[.='Ginger Cat'][@class='feed-add-post-destination-text']")).getText();
+
+
+        String actualUser1= Driver.get().findElement(By.xpath("//span[.='"+expectedUser1+"'][@class='feed-add-post-destination-text']")).getText();
+        String actualUser2= Driver.get().findElement(By.xpath("//span[.='"+expectedUser2+"'][@class='feed-add-post-destination-text']")).getText();
         Assert.assertEquals(expectedUser1,actualUser1);
         Assert.assertEquals(expectedUser2,actualUser2);
     }
