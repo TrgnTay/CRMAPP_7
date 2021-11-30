@@ -1,7 +1,12 @@
 package com.CRM_7.pages;
 
+import com.CRM_7.utilities.BrowserUtils;
+import com.CRM_7.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
 
@@ -62,6 +67,19 @@ public class BasePage {
     @FindBy(id= "feed-add-post-form-link-text")
     public WebElement More2;
 
+    public BasePage() {
+        PageFactory.initElements(Driver.get(), this);
+    }
+
+    public void navigateToModule(String tab, String module) {
+        String tabLocator = "//span[normalize-space()='" + tab + "' and contains(@class, 'feed-add-post-form-link-more')]";
+        Driver.get().findElement(By.xpath(tabLocator)).click();
+        String moduleLocator = "//span[normalize-space()='" + module + "' and contains(@class, 'menu-popup-item-text')]";
+        Driver.get().findElement(By.xpath(moduleLocator)).click();
+
+
+        }
+    }
 
 
 
@@ -75,4 +93,9 @@ public class BasePage {
 
 
 
-}
+
+
+
+
+
+

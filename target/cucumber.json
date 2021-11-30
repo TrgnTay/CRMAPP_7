@@ -3,11 +3,32 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-25T20:32:50.763Z",
+        "line": 5,
+        "name": "log in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5201000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-29T23:30:09.935Z",
         "before": [
           {
             "result": {
-              "duration": 4154000000,
+              "duration": 5073000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +36,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "",
+        "line": 8,
+        "name": "add users by selecting multiple contacts from Employees and Departments contact lists",
         "description": "",
-        "id": "login;",
+        "id": ";add-users-by-selecting-multiple-contacts-from-employees-and-departments-contact-lists",
         "after": [
           {
             "result": {
-              "duration": 141000000,
+              "duration": 1323000000,
               "status": "passed"
             },
             "match": {
@@ -35,32 +56,110 @@
         "steps": [
           {
             "result": {
-              "duration": 6508000000,
+              "duration": 3995000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "User logs in with valid credentials",
+            "line": 10,
+            "name": "User navigates to \"More\" \"Announcement\"",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+              "arguments": [
+                {
+                  "val": "\"More\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Announcement\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.PortpalStepDef.user_navigates_to(java.lang.String,java.lang.String)"
             },
-            "keyword": "Given "
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 98000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clicks Add Mention icon",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.PortpalStepDef.clicks_Add_Mention_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 242000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clicks Employees and Departments",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.PortpalStepDef.clicks_Employees_and_Departments()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1150000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User selects \"Ginger Cat\" and \"Murat Kahveci\" from Employees and Departments contact lists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ginger Cat\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"Murat Kahveci\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.PortpalStepDef.user_selects_and_from_Employees_and_Departments_contact_lists(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The input box should show descriptions containing \"Ginger Cat\" and \"Murat Kahveci\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ginger Cat\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"Murat Kahveci\"",
+                  "offset": 67
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.PortpalStepDef.the_input_box_should_show_descriptions_containing_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "login",
-    "description": "",
-    "id": "login",
+    "name": "",
+    "description": "  add users",
+    "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/addUsers.feature",
     "tags": [
       {
-        "name": "@login",
+        "name": "@wip",
         "type": "Tag",
         "location": {
           "line": 1,
