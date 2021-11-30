@@ -1,9 +1,14 @@
 package com.CRM_7.pages;
 
+import com.CRM_7.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class BasePage {
+public abstract class BasePage {
+    public BasePage() {
+        PageFactory.initElements(Driver.get(), this);
+    }
 
     @FindBy (xpath = "//*[@title='Tasks']")
     public WebElement Tasks;
