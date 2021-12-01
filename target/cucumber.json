@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-12-01T22:50:25.394Z",
+        "start_timestamp": "2021-12-01T22:55:49.135Z",
         "before": [
           {
             "result": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2000000,
               "status": "skipped"
             },
             "line": 14,
