@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-12-01T23:20:08.926Z",
+        "start_timestamp": "2021-12-01T23:23:57.296Z",
         "before": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "skipped"
             },
             "match": {
@@ -16,9 +16,9 @@
           }
         ],
         "line": 13,
-        "name": "User should be able to make a comment, like, or unfollow on other employees\u0027 posts.",
+        "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
         "description": "",
-        "id": ";user-should-be-able-to-make-a-comment--like--or-unfollow-on-other-employees--posts.",
+        "id": ";user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments",
         "after": [
           {
             "result": {
@@ -34,11 +34,14 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 14,
             "name": "The user is on the Portal page.",
-            "match": {},
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
+            },
             "keyword": "Given "
           },
           {
@@ -46,7 +49,7 @@
               "status": "undefined"
             },
             "line": 15,
-            "name": "The user clicks on the comment, the user is able to make a comment on the employee\u0027s posts.",
+            "name": "The user clicks on the like, the is able to like other reviewer\u0027s comments.",
             "match": {},
             "keyword": "When "
           },
@@ -55,23 +58,14 @@
               "status": "undefined"
             },
             "line": 16,
-            "name": "The user clicks on the like, the user is able to like the posts.",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 17,
-            "name": "The user clicks on the unfollow, the user is able to unfollow the user\u0027s posts.",
+            "name": "The user clicks on the reply, the is able to make a comment on the reviewers\u0027s comments.",
             "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ZULL-801"
+            "name": "@ZULL-802"
           }
         ]
       }
@@ -80,7 +74,7 @@
     "description": "",
     "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-801_enda.feature",
+    "uri": "file:src/test/resources/features/@ZULL-802_enda.feature",
     "tags": []
   }
 ]
