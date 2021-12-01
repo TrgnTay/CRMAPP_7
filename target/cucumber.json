@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-12-01T22:55:49.135Z",
+        "start_timestamp": "2021-12-01T23:20:08.926Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2000000,
               "status": "skipped"
             },
             "match": {
@@ -16,9 +16,9 @@
           }
         ],
         "line": 13,
-        "name": "User should be able to add others\u0027 posts to favorite by clicking on the Star icon.",
+        "name": "User should be able to make a comment, like, or unfollow on other employees\u0027 posts.",
         "description": "",
-        "id": ";user-should-be-able-to-add-others--posts-to-favorite-by-clicking-on-the-star-icon.",
+        "id": ";user-should-be-able-to-make-a-comment--like--or-unfollow-on-other-employees--posts.",
         "after": [
           {
             "result": {
@@ -34,14 +34,11 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
-              "status": "skipped"
+              "status": "undefined"
             },
             "line": 14,
             "name": "The user is on the Portal page.",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
@@ -49,7 +46,7 @@
               "status": "undefined"
             },
             "line": 15,
-            "name": "The user hovers on the star icon of the helpdesk9@cybertekschool.com and \u0027add to favorites message\u0027 appears.",
+            "name": "The user clicks on the comment, the user is able to make a comment on the employee\u0027s posts.",
             "match": {},
             "keyword": "When "
           },
@@ -58,7 +55,7 @@
               "status": "undefined"
             },
             "line": 16,
-            "name": "The user clicks on the star, he/she is able to click the star icon.",
+            "name": "The user clicks on the like, the user is able to like the posts.",
             "match": {},
             "keyword": "When "
           },
@@ -67,14 +64,14 @@
               "status": "undefined"
             },
             "line": 17,
-            "name": "The user sees \u0027romove from the favorites message\u0027 after clicking the star icon.",
+            "name": "The user clicks on the unfollow, the user is able to unfollow the user\u0027s posts.",
             "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ZULL-804"
+            "name": "@ZULL-801"
           }
         ]
       }
@@ -83,7 +80,7 @@
     "description": "",
     "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-804_enda.feature",
+    "uri": "file:src/test/resources/features/@ZULL-801_enda.feature",
     "tags": []
   }
 ]

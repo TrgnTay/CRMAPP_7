@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-804_enda.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-801_enda.feature");
 formatter.feature({
   "name": "",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "User should be able to add others\u0027 posts to favorite by clicking on the Star icon.",
+  "name": "User should be able to make a comment, like, or unfollow on other employees\u0027 posts.",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@ZULL-804"
+      "name": "@ZULL-801"
     }
   ]
 });
@@ -21,14 +21,12 @@ formatter.step({
   "name": "The user is on the Portal page.",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "The user hovers on the star icon of the helpdesk9@cybertekschool.com and \u0027add to favorites message\u0027 appears.",
+  "name": "The user clicks on the comment, the user is able to make a comment on the employee\u0027s posts.",
   "keyword": "When "
 });
 formatter.match({});
@@ -36,7 +34,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "The user clicks on the star, he/she is able to click the star icon.",
+  "name": "The user clicks on the like, the user is able to like the posts.",
   "keyword": "When "
 });
 formatter.match({});
@@ -44,7 +42,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "The user sees \u0027romove from the favorites message\u0027 after clicking the star icon.",
+  "name": "The user clicks on the unfollow, the user is able to unfollow the user\u0027s posts.",
   "keyword": "Then "
 });
 formatter.match({});
