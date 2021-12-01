@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-802_enda.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-803_enda.feature");
 formatter.feature({
   "name": "",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
+  "name": "User should be able to click on reviewers\u0027 names and visit their profiles.",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@ZULL-802"
+      "name": "@ZULL-803"
     }
   ]
 });
@@ -28,7 +28,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "The user clicks on the like, he/she is able to like other reviewer\u0027s comments.",
+  "name": "The user is able to click on reviewers\u0027 names.",
   "keyword": "When "
 });
 formatter.match({});
@@ -36,7 +36,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "The user clicks on the reply, he/she is able to make a comment on the reviewers\u0027s comments.",
+  "name": "The user is able to visit the reviewers\u0027 profiles.",
   "keyword": "Then "
 });
 formatter.match({});

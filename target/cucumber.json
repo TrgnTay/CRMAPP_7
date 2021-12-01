@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-12-01T22:45:19.163Z",
+        "start_timestamp": "2021-12-01T22:48:10.861Z",
         "before": [
           {
             "result": {
@@ -16,9 +16,9 @@
           }
         ],
         "line": 13,
-        "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
+        "name": "User should be able to click on reviewers\u0027 names and visit their profiles.",
         "description": "",
-        "id": ";user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments",
+        "id": ";user-should-be-able-to-click-on-reviewers--names-and-visit-their-profiles.",
         "after": [
           {
             "result": {
@@ -49,7 +49,7 @@
               "status": "undefined"
             },
             "line": 15,
-            "name": "The user clicks on the like, he/she is able to like other reviewer\u0027s comments.",
+            "name": "The user is able to click on reviewers\u0027 names.",
             "match": {},
             "keyword": "When "
           },
@@ -58,14 +58,14 @@
               "status": "undefined"
             },
             "line": 16,
-            "name": "The user clicks on the reply, he/she is able to make a comment on the reviewers\u0027s comments.",
+            "name": "The user is able to visit the reviewers\u0027 profiles.",
             "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ZULL-802"
+            "name": "@ZULL-803"
           }
         ]
       }
@@ -74,7 +74,7 @@
     "description": "",
     "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-802_enda.feature",
+    "uri": "file:src/test/resources/features/@ZULL-803_enda.feature",
     "tags": []
   }
 ]
