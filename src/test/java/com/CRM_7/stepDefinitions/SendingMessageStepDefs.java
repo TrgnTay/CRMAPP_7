@@ -7,6 +7,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en_old.Ac;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class SendingMessageStepDefs {
 
@@ -16,7 +18,12 @@ public class SendingMessageStepDefs {
     public void user_writes_sample_text_in_the_message_box() {
         BrowserUtils.waitFor(2);
         Driver.get().switchTo().frame(activityStreamPage.messageBox);
-        activityStreamPage.messageBox.sendKeys("sample text");
+        WebElement msgBox = Driver.get().findElement(By.xpath("//iframe[@class='bx-editor-iframe']"));
+        msgBox.sendKeys("sample text");
+        Driver.get().switchTo().defaultContent();
+
+
+        // activityStreamPage.messageBox.sendKeys("sample text");
     }
 
     @When("Clicks Send Button")
@@ -31,7 +38,7 @@ public class SendingMessageStepDefs {
      String expectedText = "sample text";
      String actualText = activityStreamPage.activityHistory.getText();
 
-        Assert.assertEquals("no match", expectedText,actualText);
+        Assert.assertEquals("no match", expectedText,actualText );
     }
 
 
