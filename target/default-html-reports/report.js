@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-803_enda.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-804_enda.feature");
 formatter.feature({
   "name": "",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "User should be able to click on reviewers\u0027 names and visit their profiles.",
+  "name": "User should be able to add others\u0027 posts to favorite by clicking on the Star icon.",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@ZULL-803"
+      "name": "@ZULL-804"
     }
   ]
 });
@@ -28,7 +28,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "The user is able to click on reviewers\u0027 names.",
+  "name": "The user hovers on the star icon of the helpdesk9@cybertekschool.com and \u0027add to favorites message\u0027 appears.",
   "keyword": "When "
 });
 formatter.match({});
@@ -36,7 +36,15 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "The user is able to visit the reviewers\u0027 profiles.",
+  "name": "The user clicks on the star, he/she is able to click the star icon.",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "The user sees \u0027romove from the favorites message\u0027 after clicking the star icon.",
   "keyword": "Then "
 });
 formatter.match({});
