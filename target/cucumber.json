@@ -1,29 +1,28 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-11-30T18:07:11.656Z",
+        "start_timestamp": "2021-12-01T22:32:16.850Z",
         "before": [
           {
             "result": {
-              "duration": 4241000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 3,
-        "name": "",
+        "line": 13,
+        "name": "User should be able to make a comment, like, or unfollow on other employees\u0027 posts.",
         "description": "",
-        "id": "login;",
+        "id": ";user-should-be-able-to-make-a-comment--like--or-unfollow-on-other-employees--posts.",
         "after": [
           {
             "result": {
-              "duration": 710000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "match": {
               "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -35,38 +34,53 @@
         "steps": [
           {
             "result": {
-              "duration": 6209000000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 4,
-            "name": "User logs in with valid credentials",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
-            },
+            "line": 14,
+            "name": "The user is on the Portal page.",
+            "match": {},
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "The user clicks on the comment, he/she is able to make a comment on the employee\u0027s posts.",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "The user clicks on the like, he/she is able to like the posts.",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "The user clicks on the unfollow, he/she is able to unfollow the user\u0027s posts.",
+            "match": {},
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@ZULL-801"
           }
         ]
       }
     ],
-    "name": "login",
+    "name": "",
     "description": "",
-    "id": "login",
+    "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
-    "tags": [
-      {
-        "name": "@login",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/@ZULL-801_enda.feature",
+    "tags": []
   }
 ]
