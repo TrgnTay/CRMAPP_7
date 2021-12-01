@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-12-01T23:23:57.296Z",
+        "start_timestamp": "2021-12-01T23:27:35.847Z",
         "before": [
           {
             "result": {
@@ -16,9 +16,9 @@
           }
         ],
         "line": 13,
-        "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
+        "name": "User should be able to add others\u0027 posts to favorite by clicking on the Star icon.",
         "description": "",
-        "id": ";user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments",
+        "id": ";user-should-be-able-to-add-others--posts-to-favorite-by-clicking-on-the-star-icon.",
         "after": [
           {
             "result": {
@@ -49,7 +49,7 @@
               "status": "undefined"
             },
             "line": 15,
-            "name": "The user clicks on the like, the is able to like other reviewer\u0027s comments.",
+            "name": "The user hovers on the star icon of the helpdesk9@cybertekschool.com and add to favorites message appears.",
             "match": {},
             "keyword": "When "
           },
@@ -58,14 +58,23 @@
               "status": "undefined"
             },
             "line": 16,
-            "name": "The user clicks on the reply, the is able to make a comment on the reviewers\u0027s comments.",
+            "name": "The user clicks on the star, the is able to click the star icon.",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "The user sees romove from the favorites message, after clicking the star icon.",
             "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ZULL-802"
+            "name": "@ZULL-804"
           }
         ]
       }
@@ -74,7 +83,7 @@
     "description": "",
     "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-802_enda.feature",
+    "uri": "file:src/test/resources/features/@ZULL-804_enda.feature",
     "tags": []
   }
 ]
