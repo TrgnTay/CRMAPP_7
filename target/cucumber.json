@@ -1,29 +1,28 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-11-25T17:07:08.572Z",
+        "start_timestamp": "2021-12-01T20:24:18.832Z",
         "before": [
           {
             "result": {
-              "duration": 11007000000,
-              "status": "passed"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 3,
-        "name": "",
+        "line": 10,
+        "name": "User should be able to display the Company Structure",
         "description": "",
-        "id": "login;",
+        "id": ";user-should-be-able-to-display-the-company-structure",
         "after": [
           {
             "result": {
-              "duration": 114000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "match": {
               "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -35,38 +34,44 @@
         "steps": [
           {
             "result": {
-              "duration": 21184000000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 4,
-            "name": "User logs in with valid credentials",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
-            },
+            "line": 13,
+            "name": "the user is on the Portal Page.",
+            "match": {},
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "the user clicks on the Employees function",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "the user is able to display the Company Structure",
+            "match": {},
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@ZULL-808"
           }
         ]
       }
     ],
-    "name": "login",
+    "name": "",
     "description": "",
-    "id": "login",
+    "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
-    "tags": [
-      {
-        "name": "@login",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/1%20(2).feature",
+    "tags": []
   }
 ]

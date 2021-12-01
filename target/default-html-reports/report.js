@@ -1,38 +1,47 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/1%20(2).feature");
 formatter.feature({
-  "name": "login",
+  "name": "",
   "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@login"
-    }
-  ]
+  "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "",
+  "name": "User should be able to display the Company Structure",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@login"
+      "name": "@ZULL-808"
     }
   ]
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "User logs in with valid credentials",
+  "name": "the user is on the Portal Page.",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the user clicks on the Employees function",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the user is able to display the Company Structure",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });
