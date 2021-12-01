@@ -16,7 +16,7 @@ Feature:
 	Scenario: User should be able to find employees by search box.
 		
 		
-		Given the user is on the Portal Page.
+		Given the user is on the Portal Page
 		And the user clicks on the employees function
 		And the user clicks on the Find Employee button
 		When the user sees the search box

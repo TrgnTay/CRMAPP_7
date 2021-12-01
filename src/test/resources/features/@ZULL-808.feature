@@ -10,8 +10,8 @@ Feature:
 	Scenario: User should be able to display the Company Structure
 		
 		
-		Given the user is on the Portal Page.
-		When the user clicks on the Employees function
+		Given the user is on the Portal Page
+		When the user clicks on the employees function
 		Then the user is able to display the Company Structure
 		
 		

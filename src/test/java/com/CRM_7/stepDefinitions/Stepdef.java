@@ -10,7 +10,6 @@ public class Stepdef {
 
     }
 
-
     @Given("the user clicks on the employees function")
     public void the_user_clicks_on_the_employees_function() {
         // Write code here that turns the phrase above into concrete actions
