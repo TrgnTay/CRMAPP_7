@@ -1,10 +1,17 @@
 package com.CRM_7.pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import com.CRM_7.utilities.Driver;
+import static com.CRM_7.utilities.Driver.get;
 
-public class BasePage {
 
+public abstract class BasePage {
+    public BasePage(){
+        PageFactory.initElements(Driver.get(),this);
+    }
     @FindBy (xpath = "//*[@title='Tasks']")
     public WebElement Tasks;
 
@@ -61,18 +68,5 @@ public class BasePage {
 
     @FindBy(id= "feed-add-post-form-link-text")
     public WebElement More2;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
