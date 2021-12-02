@@ -19,7 +19,7 @@ public class StepDefs_801 {
 
 
         String expectedPageTitle = "Portal";
-        String actualPagetitle = driver.get().getTitle();
+        String actualPagetitle = Driver.get().getTitle();
 
         System.out.println(Driver.get().getTitle());
 
@@ -30,7 +30,7 @@ public class StepDefs_801 {
     public void the_user_clicks_on_the_comment_the_user_is_able_to_make_a_comment_on_the_employee_s_posts() {
 
         BrowserUtils.waitFor(2);
-        portalPage.commentInput2.click();
+        portalPage.commentTab.click();
         portalPage.commentInput2.sendKeys("Great");
         BrowserUtils.waitFor(2);
         portalPage.sendButton.click();

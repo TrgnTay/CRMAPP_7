@@ -14,9 +14,6 @@ public class PortalPage extends BasePage{
     @FindBy(xpath = "//*[@id='blg-post-235'] //a[@class='feed-com-add-link']")
     public WebElement commentInput2;
 
-
-
-
     @FindBy(css="#lhe_button_submit_blogCommentFormWYct")
     public WebElement sendButton;
 
