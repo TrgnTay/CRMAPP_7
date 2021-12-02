@@ -1,5 +1,6 @@
-Feature: 
-
+Feature: User should be able to like or make comments on all other reviewers' comments
+Background:
+	Given User logs in with valid credentials
 	#*User Story:* As a user, I should be able to interact with employees on the posts that I have access to.
 	#
 	#*Acceptance Criteria:*

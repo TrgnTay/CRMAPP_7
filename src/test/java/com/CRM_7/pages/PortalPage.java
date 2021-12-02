@@ -29,6 +29,14 @@ public class PortalPage extends BasePage{
     @FindBy(xpath = " (//div[@title='Like'])[1]")
     public WebElement likeIcon;
 
+    @FindBy(xpath = "(//a[.='Like'])[8]")
+    public WebElement likeOthersComment;
+
+    @FindBy(xpath = "(//a[.='Comment'])[8]")
+    public WebElement ReplyOtherComment;
+
+
+
 
 
 
@@ -53,6 +61,8 @@ public WebElement calendar;
     @FindBy(xpath = "//button[starts-with(@id, 'lhe_button_submit_blogCommentForm')]")
     public WebElement sendButtonginger;
 
+    @FindBy(xpath = "(//div[.='good'])[1]")
+    public WebElement commentGood;
 
 
 

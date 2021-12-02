@@ -36,21 +36,21 @@ public class StepDefs_801 {
         Driver.get().switchTo().frame(portalPage.replyIframe);
         portalPage.contentInput.sendKeys("Great");
         BrowserUtils.waitFor(2);
-Driver.get().switchTo().defaultContent();
+        Driver.get().switchTo().defaultContent();
         portalPage.sendButton.click();
         Assert.assertTrue(portalPage.commentGreat.isDisplayed());
     }
 
-   @When("The user clicks on the like, the user is able to like the posts.")
-    public void the_user_clicks_on_the_like_the_user_is_able_to_like_the_posts() {
-      portalPage.likeButton.click();
-//    String text= portalPage.likeButton.getText();
-    Assert.assertTrue(portalPage.likeIcon.isDisplayed());
+        @When("The user clicks on the like, the user is able to like the posts.")
+        public void the_user_clicks_on_the_like_the_user_is_able_to_like_the_posts() {
+        portalPage.likeButton.click();
+        Assert.assertTrue(portalPage.likeIcon.isDisplayed());
     }
 
-    @Then("The user clicks on the unfollow, the user is able to unfollow the user's posts.")
-    public void the_user_clicks_on_the_unfollow_the_user_is_able_to_unfollow_the_user_s_posts() {
+       @Then("The user clicks on the unfollow, the user is able to unfollow the user's posts.")
+       public void the_user_clicks_on_the_unfollow_the_user_is_able_to_unfollow_the_user_s_posts() {
        portalPage.unfollowButton.click();
+       Assert.assertTrue(portalPage.unfollowButton.isDisplayed());
 
     }
 
