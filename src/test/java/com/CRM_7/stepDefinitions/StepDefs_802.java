@@ -1,5 +1,6 @@
 package com.CRM_7.stepDefinitions;
 
+import com.CRM_7.pages.PortalPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -11,7 +12,9 @@ public class StepDefs_802 {
 
     @Then("The user clicks on the reply, the user is able to make a comment on the reviewers's comments.")
     public void the_user_clicks_on_the_reply_the_user_is_able_to_make_a_comment_on_the_reviewers_s_comments() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
+
+
+
     }
 }

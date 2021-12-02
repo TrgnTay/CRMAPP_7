@@ -1,28 +1,61 @@
 package com.CRM_7.pages;
 
+import com.CRM_7.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class PortalPage extends BasePage{
+    public PortalPage(){
+        PageFactory.initElements(Driver.get(), this);
+    }
 
-    @FindBy(css = "#blog-post-addc-add-235")
+    @FindBy(xpath = "(//a[.='Comment'])[1]")
     public WebElement commentTab;
 
-    @FindBy(xpath = "//body[@contenteditable='true']")
+
+    @FindBy(xpath = "//a[@id='blog-post-addc-add-235']")
     public WebElement commentInput;
 
-    @FindBy(xpath = "//*[@id='blg-post-235'] //a[@class='feed-com-add-link']")
-    public WebElement commentInput2;
+    @FindBy(xpath = "(//div[@class='feed-com-text-inner-inner'])[1]")
+    public WebElement commentGreat;
 
-    @FindBy(css="#lhe_button_submit_blogCommentFormWYct")
+    @FindBy(xpath ="//button[starts-with(@id, 'lhe_button_submit_blogCommentForm')]")
     public WebElement sendButton;
 
-    @FindBy(xpath = "//*[@id='bx-ilike-button-BLOG_COMMENT_29-1638409039']/span/a")
+    @FindBy(xpath = "(//a[.='Like'])[1]")
     public WebElement likeButton;
 
+    @FindBy(xpath = " (//div[@title='Like'])[1]")
+    public WebElement likeIcon;
 
-    @FindBy(xpath = "(//div[@class='feed-post-informers-cont'])/span[3]/a")
+
+
+
+    @FindBy(xpath= "(//a[.='Unfollow'])[1]")
     public WebElement unfollowButton;
+
+@FindBy(xpath = "//li[@data-id='menu_external_mail']")
+public WebElement calendar;
+
+    //task802
+
+    @FindBy(css= "#record-BLOG_235-31-actions-reply]")
+    public WebElement replyReviewerButton;
+
+
+    @FindBy(css= ".bx-editor-iframe")
+    public WebElement replyIframe;
+
+    @FindBy(xpath = "//body[@contenteditable='true']")
+    public WebElement contentInput;
+
+    @FindBy(xpath = "//button[starts-with(@id, 'lhe_button_submit_blogCommentForm')]")
+    public WebElement sendButtonginger;
+
+
+
+
 
 
 

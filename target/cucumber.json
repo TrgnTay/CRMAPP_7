@@ -3,26 +3,48 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-12-02T10:03:50.412Z",
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12715000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-02T21:39:20.331Z",
         "before": [
           {
             "result": {
-              "duration": 2000000,
-              "status": "skipped"
+              "duration": 5707000000,
+              "status": "passed"
             },
             "match": {
               "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 13,
-        "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
+        "line": 18,
+        "name": "User should be able to make a comment, like, or unfollow on other employees\u0027 posts.",
         "description": "",
-        "id": ";user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments",
+        "id": "user-should-be-able-to-make-a-comment--like--or-unfollow-on-other-employees--posts.;user-should-be-able-to-make-a-comment--like--or-unfollow-on-other-employees--posts.",
         "after": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 1338000000,
+              "status": "passed"
             },
             "match": {
               "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -34,10 +56,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 27000000,
+              "status": "passed"
             },
-            "line": 14,
+            "line": 19,
             "name": "The user is on the Portal page.",
             "match": {
               "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
@@ -46,35 +68,53 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 5521000000,
+              "status": "passed"
             },
-            "line": 15,
-            "name": "The user clicks on the like, the user is able to like other reviewer\u0027s comments.",
-            "match": {},
+            "line": 20,
+            "name": "The user clicks on the comment, the user is able to make a comment on the employee\u0027s posts.",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_clicks_on_the_comment_the_user_is_able_to_make_a_comment_on_the_employee_s_posts()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 723000000,
+              "status": "passed"
             },
-            "line": 16,
-            "name": "The user clicks on the reply, the user is able to make a comment on the reviewers\u0027s comments.",
-            "match": {},
+            "line": 21,
+            "name": "The user clicks on the like, the user is able to like the posts.",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_clicks_on_the_like_the_user_is_able_to_like_the_posts()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 204000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user clicks on the unfollow, the user is able to unfollow the user\u0027s posts.",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_clicks_on_the_unfollow_the_user_is_able_to_unfollow_the_user_s_posts()"
+            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ZULL-802"
+            "name": "@ZULL-801"
           }
         ]
       }
     ],
-    "name": "",
+    "name": "User should be able to make a comment, like, or unfollow on other employees\u0027 posts.",
     "description": "",
-    "id": "",
+    "id": "user-should-be-able-to-make-a-comment--like--or-unfollow-on-other-employees--posts.",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-802_enda.feature",
+    "uri": "file:src/test/resources/features/@ZULL-801_enda.feature",
     "tags": []
   }
 ]

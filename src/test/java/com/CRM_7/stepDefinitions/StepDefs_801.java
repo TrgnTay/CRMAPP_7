@@ -26,26 +26,32 @@ public class StepDefs_801 {
         Assert.assertTrue(actualPagetitle.contains(expectedPageTitle));
     }
 
-    @When("The user clicks on the comment, the user is able to make a comment on the employee's posts.")
+   @When("The user clicks on the comment, the user is able to make a comment on the employee's posts.")
     public void the_user_clicks_on_the_comment_the_user_is_able_to_make_a_comment_on_the_employee_s_posts() {
 
-        BrowserUtils.waitFor(2);
+
         portalPage.commentTab.click();
-        portalPage.commentInput2.sendKeys("Great");
         BrowserUtils.waitFor(2);
+
+        Driver.get().switchTo().frame(portalPage.replyIframe);
+        portalPage.contentInput.sendKeys("Great");
+        BrowserUtils.waitFor(2);
+Driver.get().switchTo().defaultContent();
         portalPage.sendButton.click();
+        Assert.assertTrue(portalPage.commentGreat.isDisplayed());
     }
 
-    @When("The user clicks on the like, the user is able to like the posts.")
+   @When("The user clicks on the like, the user is able to like the posts.")
     public void the_user_clicks_on_the_like_the_user_is_able_to_like_the_posts() {
-    new PortalPage().likeButton.click();
-    String text= portalPage.likeButton.getText();
-    Assert.assertTrue(text.contains("liked"));
+      portalPage.likeButton.click();
+//    String text= portalPage.likeButton.getText();
+    Assert.assertTrue(portalPage.likeIcon.isDisplayed());
     }
 
     @Then("The user clicks on the unfollow, the user is able to unfollow the user's posts.")
     public void the_user_clicks_on_the_unfollow_the_user_is_able_to_unfollow_the_user_s_posts() {
-    portalPage.unfollowButton.click();
+       portalPage.unfollowButton.click();
+
     }
 
 
