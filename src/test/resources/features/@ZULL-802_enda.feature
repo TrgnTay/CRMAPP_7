@@ -12,5 +12,5 @@ Feature:
 	@ZULL-802
 	Scenario: User should be able to like or make comments on all other reviewers' comments
 		Given The user is on the Portal page.
-		When The user clicks on the like, the is able to like other reviewer's comments.
-		Then The user clicks on the reply, the is able to make a comment on the reviewers's comments.
+		When The user clicks on the like, the user is able to like other reviewer's comments.
+		Then The user clicks on the reply, the user is able to make a comment on the reviewers's comments.
