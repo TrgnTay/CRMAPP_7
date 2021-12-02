@@ -1,57 +1,38 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-804_enda.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
 formatter.feature({
-  "name": "",
+  "name": "Login",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@login"
+    }
+  ]
 });
 formatter.scenario({
-  "name": "User should be able to add others\u0027 posts to favorite by clicking on the Star icon.",
+  "name": "Login",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@ZULL-804"
+      "name": "@login"
     }
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "The user is on the Portal page.",
+  "name": "User logs in with valid credentials",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
+  "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "The user hovers on the star icon of the helpdesk9@cybertekschool.com and add to favorites message appears.",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "The user clicks on the star, the is able to click the star icon.",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "The user sees romove from the favorites message, after clicking the star icon.",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 });

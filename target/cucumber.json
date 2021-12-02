@@ -1,28 +1,29 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-12-01T23:27:35.847Z",
+        "start_timestamp": "2021-12-02T09:25:25.549Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 3335000000,
+              "status": "passed"
             },
             "match": {
               "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 13,
-        "name": "User should be able to add others\u0027 posts to favorite by clicking on the Star icon.",
+        "line": 3,
+        "name": "Login",
         "description": "",
-        "id": ";user-should-be-able-to-add-others--posts-to-favorite-by-clicking-on-the-star-icon.",
+        "id": "login;login",
         "after": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 764000000,
+              "status": "passed"
             },
             "match": {
               "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -34,56 +35,38 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 7164000000,
+              "status": "passed"
             },
-            "line": 14,
-            "name": "The user is on the Portal page.",
+            "line": 4,
+            "name": "User logs in with valid credentials",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 15,
-            "name": "The user hovers on the star icon of the helpdesk9@cybertekschool.com and add to favorites message appears.",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 16,
-            "name": "The user clicks on the star, the is able to click the star icon.",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 17,
-            "name": "The user sees romove from the favorites message, after clicking the star icon.",
-            "match": {},
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ZULL-804"
+            "name": "@login"
           }
         ]
       }
     ],
-    "name": "",
+    "name": "Login",
     "description": "",
-    "id": "",
+    "id": "login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-804_enda.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
