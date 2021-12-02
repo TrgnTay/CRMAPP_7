@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-802_enda.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-803_enda.feature");
 formatter.feature({
-  "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
+  "name": "User should be able to click on reviewers\u0027 names and visit their profiles.",
   "description": "",
   "keyword": "Feature"
 });
@@ -23,12 +23,12 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
+  "name": "User should be able to click on reviewers\u0027 names and visit their profiles.",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@ZULL-802"
+      "name": "@ZULL-803"
     }
   ]
 });
@@ -43,21 +43,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user clicks on the like, the user is able to like other reviewer\u0027s comments.",
+  "name": "The user is able to click on reviewers\u0027 names.",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_802.the_user_clicks_on_the_like_the_user_is_able_to_like_other_reviewer_s_comments()"
+  "location": "com.CRM_7.stepDefinitions.StepDefs_803.the_user_is_able_to_click_on_reviewers_names()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user clicks on the reply, the user is able to make a comment on the reviewers\u0027s comments.",
+  "name": "The user is able to visit the reviewers\u0027 profiles.",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_802.the_user_clicks_on_the_reply_the_user_is_able_to_make_a_comment_on_the_reviewers_s_comments()"
+  "location": "com.CRM_7.stepDefinitions.StepDefs_803.the_user_is_able_to_visit_the_reviewers_profiles()"
 });
 formatter.result({
   "status": "passed"

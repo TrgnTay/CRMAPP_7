@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7509000000,
+              "duration": 7010000000,
               "status": "passed"
             },
             "line": 3,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-02T23:30:05.678Z",
+        "start_timestamp": "2021-12-02T23:51:55.083Z",
         "before": [
           {
             "result": {
-              "duration": 3102000000,
+              "duration": 3774000000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
+        "line": 15,
+        "name": "User should be able to click on reviewers\u0027 names and visit their profiles.",
         "description": "",
-        "id": "user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments;user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments",
+        "id": "user-should-be-able-to-click-on-reviewers--names-and-visit-their-profiles.;user-should-be-able-to-click-on-reviewers--names-and-visit-their-profiles.",
         "after": [
           {
             "result": {
-              "duration": 736000000,
+              "duration": 753000000,
               "status": "passed"
             },
             "match": {
@@ -56,10 +56,10 @@
         "steps": [
           {
             "result": {
-              "duration": 37000000,
+              "duration": 31000000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 16,
             "name": "The user is on the Portal page.",
             "match": {
               "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
@@ -68,41 +68,41 @@
           },
           {
             "result": {
-              "duration": 398000000,
+              "duration": 4257000000,
               "status": "passed"
             },
-            "line": 16,
-            "name": "The user clicks on the like, the user is able to like other reviewer\u0027s comments.",
+            "line": 17,
+            "name": "The user is able to click on reviewers\u0027 names.",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.StepDefs_802.the_user_clicks_on_the_like_the_user_is_able_to_like_other_reviewer_s_comments()"
+              "location": "com.CRM_7.stepDefinitions.StepDefs_803.the_user_is_able_to_click_on_reviewers_names()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2889000000,
+              "duration": 2133000000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "The user clicks on the reply, the user is able to make a comment on the reviewers\u0027s comments.",
+            "line": 18,
+            "name": "The user is able to visit the reviewers\u0027 profiles.",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.StepDefs_802.the_user_clicks_on_the_reply_the_user_is_able_to_make_a_comment_on_the_reviewers_s_comments()"
+              "location": "com.CRM_7.stepDefinitions.StepDefs_803.the_user_is_able_to_visit_the_reviewers_profiles()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ZULL-802"
+            "name": "@ZULL-803"
           }
         ]
       }
     ],
-    "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
+    "name": "User should be able to click on reviewers\u0027 names and visit their profiles.",
     "description": "",
-    "id": "user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments",
+    "id": "user-should-be-able-to-click-on-reviewers--names-and-visit-their-profiles.",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-802_enda.feature",
+    "uri": "file:src/test/resources/features/@ZULL-803_enda.feature",
     "tags": []
   }
 ]

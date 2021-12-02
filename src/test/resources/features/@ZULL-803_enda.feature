@@ -1,4 +1,6 @@
-Feature: 
+Feature: User should be able to click on reviewers' names and visit their profiles.
+	Background:
+		Given User logs in with valid credentials
 
 	#*User Story:* As a user, I should be able to interact with employees on the posts that I have access to.
 	#

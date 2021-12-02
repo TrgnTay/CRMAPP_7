@@ -64,6 +64,15 @@ public WebElement calendar;
     @FindBy(xpath = "(//div[.='good'])[1]")
     public WebElement commentGood;
 
+    @FindBy(xpath = "(//a[.='Ginger Cat'])[1]")
+    public WebElement gingerProfile;
+
+    @FindBy(xpath = "//span[.='Ginger Cat']")
+    public WebElement gingerProfileName;
+
+
+
+
 
 
 
