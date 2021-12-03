@@ -17,13 +17,11 @@ public class SendingMessageStepDefs {
     @When("User writes sample text in the message box")
     public void user_writes_sample_text_in_the_message_box() {
         BrowserUtils.waitFor(2);
-        Driver.get().switchTo().frame(activityStreamPage.messageBox);
-        WebElement msgBox = Driver.get().findElement(By.xpath("//iframe[@class='bx-editor-iframe']"));
-        msgBox.sendKeys("sample text");
+       Driver.get().switchTo().frame(activityStreamPage.messageBox);
+
+        activityStreamPage.textField.sendKeys("sample text");
         Driver.get().switchTo().defaultContent();
 
-
-        // activityStreamPage.messageBox.sendKeys("sample text");
     }
 
     @When("Clicks Send Button")
@@ -33,13 +31,16 @@ public class SendingMessageStepDefs {
 
     }
 
-    @Then("User can See his sample text in the activity stream history")
-    public void user_can_See_his_sample_text_in_the_activity_stream_history() {
-     String expectedText = "sample text";
-     String actualText = activityStreamPage.activityHistory.getText();
 
-        Assert.assertEquals("no match", expectedText,actualText );
+    @Then("Message is sent")
+    public void messageIsSent() {
+        String expected =  "sample text";
+        String actual = activityStreamPage.activityHistory.getText();
+
+        Assert.assertEquals("no match",expected,actual);
+
     }
-
-
 }
+
+
+
