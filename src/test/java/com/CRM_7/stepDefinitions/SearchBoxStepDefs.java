@@ -28,7 +28,7 @@ public class SearchBoxStepDefs {
 
     @Then("the user is able to search employees by search box")
     public void the_user_is_able_to_search_employees_by_email() {
-        //employeesPage.SearchBox.sendKeys(+ Keys.ENTER) ;
+        employeesPage.SearchBox.sendKeys("m.sevinc12@gmail.com");
       BrowserUtils.waitFor(3);
     }
 

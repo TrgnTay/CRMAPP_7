@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6630000000,
+              "duration": 5683000000,
               "status": "passed"
             },
             "line": 3,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-03T12:08:08.080Z",
+        "start_timestamp": "2021-12-03T12:22:47.981Z",
         "before": [
           {
             "result": {
-              "duration": 4992000000,
+              "duration": 4729000000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 11,
-        "name": "User should be able to display the Company Structure",
+        "line": 17,
+        "name": "User should be able to find employees by search box.",
         "description": "",
-        "id": ";user-should-be-able-to-display-the-company-structure",
+        "id": ";user-should-be-able-to-find-employees-by-search-box.",
         "after": [
           {
             "result": {
-              "duration": 927000000,
+              "duration": 1129000000,
               "status": "passed"
             },
             "match": {
@@ -56,10 +56,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2117000000,
+              "duration": 2257000000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 19,
             "name": "the user clicks on the employees",
             "match": {
               "location": "com.CRM_7.stepDefinitions.AddDepartmentStepDefs.the_user_clicks_on_the_employees()"
@@ -68,20 +68,44 @@
           },
           {
             "result": {
-              "duration": 147000000,
+              "duration": 1785000000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "the user is able to display the Company Structure",
+            "line": 20,
+            "name": "the user clicks on the Find Employee button",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.CompanyStructureStepDefs.the_user_is_able_to_display_the_Company_Structure()"
+              "location": "com.CRM_7.stepDefinitions.SearchBoxStepDefs.the_user_clicks_on_the_Find_Employee_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 126000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user sees the search box",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.SearchBoxStepDefs.the_user_sees_the_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3127000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user is able to search employees by search box",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.SearchBoxStepDefs.the_user_is_able_to_search_employees_by_email()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ZULL-808"
+            "name": "@ZULL-807"
           }
         ]
       }
@@ -90,7 +114,7 @@
     "description": "",
     "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-808.feature",
+    "uri": "file:src/test/resources/features/@ZULL-807.feature",
     "tags": []
   }
 ]

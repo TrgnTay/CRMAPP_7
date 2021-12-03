@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-808.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-807.feature");
 formatter.feature({
   "name": "",
   "description": "",
@@ -23,12 +23,12 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "User should be able to display the Company Structure",
+  "name": "User should be able to find employees by search box.",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@ZULL-808"
+      "name": "@ZULL-807"
     }
   ]
 });
@@ -43,11 +43,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user is able to display the Company Structure",
+  "name": "the user clicks on the Find Employee button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.SearchBoxStepDefs.the_user_clicks_on_the_Find_Employee_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user sees the search box",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.SearchBoxStepDefs.the_user_sees_the_search_box()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is able to search employees by search box",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.CompanyStructureStepDefs.the_user_is_able_to_display_the_Company_Structure()"
+  "location": "com.CRM_7.stepDefinitions.SearchBoxStepDefs.the_user_is_able_to_search_employees_by_email()"
 });
 formatter.result({
   "status": "passed"
