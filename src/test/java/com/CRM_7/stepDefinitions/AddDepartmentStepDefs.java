@@ -24,13 +24,11 @@ public class AddDepartmentStepDefs {
         Assert.assertTrue(actualPagetitle.contains(expectedPageTitle));
         BrowserUtils.waitFor(5);
 
-        BasePage basepage = new BasePage();
     }
     @Given("the user clicks on the employees")
     public void the_user_clicks_on_the_employees() {
         EmployeesPage employeesPage = new EmployeesPage();
-        BasePage basepage = new BasePage();
-        basepage.Employees.click();
+        employeesPage.Employees.click();
     }
     @When("the user clicks on the Add department button")
     public void the_user_clicks_on_the_Add_department_button() {

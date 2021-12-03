@@ -1,5 +1,6 @@
-Feature: 
-
+Feature:
+Background:
+Given  User logs in with valid credentials
 	#*User Story:* As a user, I should be able to use functions under Employee menu
 	#
 	# 
@@ -14,11 +15,11 @@ Feature:
 	# # User should be able to send message to employee from the telephone directory
 	@ZULL-807
 	Scenario: User should be able to find employees by search box.
-		
 
+		And the user clicks on the employees
 		And the user clicks on the Find Employee button
 		When the user sees the search box
-		Then the user is able to search employees by email
+		Then the user is able to search employees by search box
 		
 		
 		

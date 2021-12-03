@@ -1,4 +1,6 @@
-Feature: 
+Feature:
+	Background:
+		Given  User logs in with valid credentials
 
 	#*User Story:* As a user, I should be able to use functions under Employee menu
 	#

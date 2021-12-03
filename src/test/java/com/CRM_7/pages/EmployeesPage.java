@@ -12,6 +12,11 @@ public class EmployeesPage extends BasePage{
         PageFactory.initElements(Driver.get(), this);
     }
 
+
+    @FindBy(xpath = "//*[@title='Employees']")
+    public WebElement Employees;
+
+
     @FindBy (xpath = "//span[text() = 'Company Structure'] ")
     public WebElement CompanyStructure;
 
@@ -28,8 +33,8 @@ public class EmployeesPage extends BasePage{
     public WebElement addDepartmentPopup;
 
 
-    @FindBy(xpath = "//span[text()='Find Employee']")
-    public WebElement FindEmp;
+    @FindBy(xpath = "(//span[@class='main-buttons-item-text-title'])[2]")
+    public WebElement findEmployee;
 
     @FindBy(xpath = "//input[@id='user-fio']")
     public static WebElement SearchBox;
