@@ -1,8 +1,13 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-801_enda.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-809.feature");
 formatter.feature({
-  "name": "User should be able to make a comment, like, or unfollow on other employees\u0027 posts.",
+  "name": "",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@ZULL-809"
+    }
+  ]
 });
 formatter.background({
   "name": "",
@@ -27,6 +32,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario",
   "tags": [
+    {
+      "name": "@ZULL-809"
+    },
     {
       "name": "@ZULL-801"
     }
@@ -75,12 +83,6 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.uri("file:src/test/resources/features/@ZULL-802_enda.feature");
-formatter.feature({
-  "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
-  "description": "",
-  "keyword": "Feature"
-});
 formatter.background({
   "name": "",
   "description": "",
@@ -104,6 +106,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario",
   "tags": [
+    {
+      "name": "@ZULL-809"
+    },
     {
       "name": "@ZULL-802"
     }
@@ -142,12 +147,6 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.uri("file:src/test/resources/features/@ZULL-803_enda.feature");
-formatter.feature({
-  "name": "User should be able to click on reviewers\u0027 names and visit their profiles.",
-  "description": "",
-  "keyword": "Feature"
-});
 formatter.background({
   "name": "",
   "description": "",
@@ -171,6 +170,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario",
   "tags": [
+    {
+      "name": "@ZULL-809"
+    },
     {
       "name": "@ZULL-803"
     }
@@ -209,12 +211,6 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.uri("file:src/test/resources/features/@ZULL-804_enda.feature");
-formatter.feature({
-  "name": "User should be able to add others\u0027 posts to favorite by clicking on the Star icon.",
-  "description": "",
-  "keyword": "Feature"
-});
 formatter.background({
   "name": "",
   "description": "",
@@ -238,6 +234,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario",
   "tags": [
+    {
+      "name": "@ZULL-809"
+    },
     {
       "name": "@ZULL-804"
     }
@@ -269,43 +268,6 @@ formatter.step({
 });
 formatter.match({
   "location": "com.CRM_7.stepDefinitions.StepDefs_804.theUserIsAbleToClickTheStarIcon()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.uri("file:src/test/resources/features/login.feature");
-formatter.feature({
-  "name": "Login",
-  "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@login"
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Login",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@login"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User logs in with valid credentials",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
 });
 formatter.result({
   "status": "passed"

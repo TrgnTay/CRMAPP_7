@@ -1,6 +1,6 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
         "line": 3,
@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7176000000,
+              "duration": 7053000000,
               "status": "passed"
             },
             "line": 6,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-03T10:02:57.787Z",
+        "start_timestamp": "2021-12-03T10:33:52.403Z",
         "before": [
           {
             "result": {
-              "duration": 3234000000,
+              "duration": 2663000000,
               "status": "passed"
             },
             "match": {
@@ -39,11 +39,11 @@
         "line": 18,
         "name": "User should be able to make a comment, like, or unfollow on other employees\u0027 posts.",
         "description": "",
-        "id": "user-should-be-able-to-make-a-comment--like--or-unfollow-on-other-employees--posts.;user-should-be-able-to-make-a-comment--like--or-unfollow-on-other-employees--posts.",
+        "id": ";user-should-be-able-to-make-a-comment--like--or-unfollow-on-other-employees--posts.",
         "after": [
           {
             "result": {
-              "duration": 731000000,
+              "duration": 729000000,
               "status": "passed"
             },
             "match": {
@@ -56,7 +56,7 @@
         "steps": [
           {
             "result": {
-              "duration": 24000000,
+              "duration": 65000000,
               "status": "passed"
             },
             "line": 19,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 4729000000,
+              "duration": 4694000000,
               "status": "passed"
             },
             "line": 20,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 277000000,
+              "duration": 280000000,
               "status": "passed"
             },
             "line": 21,
@@ -92,7 +92,7 @@
           },
           {
             "result": {
-              "duration": 407000000,
+              "duration": 418000000,
               "status": "passed"
             },
             "line": 22,
@@ -105,23 +105,15 @@
         ],
         "tags": [
           {
+            "name": "@ZULL-809"
+          },
+          {
             "name": "@ZULL-801"
           }
         ]
-      }
-    ],
-    "name": "User should be able to make a comment, like, or unfollow on other employees\u0027 posts.",
-    "description": "",
-    "id": "user-should-be-able-to-make-a-comment--like--or-unfollow-on-other-employees--posts.",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-801_enda.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
+      },
       {
-        "line": 2,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -129,10 +121,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7232000000,
+              "duration": 6852000000,
               "status": "passed"
             },
-            "line": 3,
+            "line": 6,
             "name": "User logs in with valid credentials",
             "match": {
               "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
@@ -142,11 +134,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-03T10:03:14.425Z",
+        "start_timestamp": "2021-12-03T10:34:08.379Z",
         "before": [
           {
             "result": {
-              "duration": 2752000000,
+              "duration": 2273000000,
               "status": "passed"
             },
             "match": {
@@ -154,10 +146,10 @@
             }
           }
         ],
-        "line": 14,
+        "line": 34,
         "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
         "description": "",
-        "id": "user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments;user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments",
+        "id": ";user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments",
         "after": [
           {
             "result": {
@@ -174,10 +166,10 @@
         "steps": [
           {
             "result": {
-              "duration": 42000000,
+              "duration": 16000000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 35,
             "name": "The user is on the Portal page.",
             "match": {
               "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
@@ -186,10 +178,10 @@
           },
           {
             "result": {
-              "duration": 242000000,
+              "duration": 276000000,
               "status": "passed"
             },
-            "line": 16,
+            "line": 36,
             "name": "The user clicks on the like, the user is able to like other reviewers\u0027 comments.",
             "match": {
               "location": "com.CRM_7.stepDefinitions.StepDefs_802.the_user_clicks_on_the_like_the_user_is_able_to_like_other_reviewer_s_comments()"
@@ -198,10 +190,10 @@
           },
           {
             "result": {
-              "duration": 2934000000,
+              "duration": 2734000000,
               "status": "passed"
             },
-            "line": 17,
+            "line": 37,
             "name": "The user clicks on the reply, the user is able to make a comment on the reviewers\u0027s comments.",
             "match": {
               "location": "com.CRM_7.stepDefinitions.StepDefs_802.the_user_clicks_on_the_reply_the_user_is_able_to_make_a_comment_on_the_reviewers_s_comments()"
@@ -211,23 +203,15 @@
         ],
         "tags": [
           {
+            "name": "@ZULL-809"
+          },
+          {
             "name": "@ZULL-802"
           }
         ]
-      }
-    ],
-    "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
-    "description": "",
-    "id": "user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-802_enda.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
+      },
       {
-        "line": 2,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -235,10 +219,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6520000000,
+              "duration": 7116000000,
               "status": "passed"
             },
-            "line": 3,
+            "line": 6,
             "name": "User logs in with valid credentials",
             "match": {
               "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
@@ -248,11 +232,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-03T10:03:28.349Z",
+        "start_timestamp": "2021-12-03T10:34:21.255Z",
         "before": [
           {
             "result": {
-              "duration": 2584000000,
+              "duration": 2555000000,
               "status": "passed"
             },
             "match": {
@@ -260,14 +244,14 @@
             }
           }
         ],
-        "line": 15,
+        "line": 48,
         "name": "User should be able to click on reviewers\u0027 names and visit their profiles.",
         "description": "",
-        "id": "user-should-be-able-to-click-on-reviewers--names-and-visit-their-profiles.;user-should-be-able-to-click-on-reviewers--names-and-visit-their-profiles.",
+        "id": ";user-should-be-able-to-click-on-reviewers--names-and-visit-their-profiles.",
         "after": [
           {
             "result": {
-              "duration": 714000000,
+              "duration": 716000000,
               "status": "passed"
             },
             "match": {
@@ -280,10 +264,10 @@
         "steps": [
           {
             "result": {
-              "duration": 12000000,
+              "duration": 25000000,
               "status": "passed"
             },
-            "line": 16,
+            "line": 49,
             "name": "The user is on the Portal page.",
             "match": {
               "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
@@ -292,10 +276,10 @@
           },
           {
             "result": {
-              "duration": 4439000000,
+              "duration": 4132000000,
               "status": "passed"
             },
-            "line": 17,
+            "line": 50,
             "name": "The user is able to click on reviewers\u0027 names.",
             "match": {
               "location": "com.CRM_7.stepDefinitions.StepDefs_803.the_user_is_able_to_click_on_reviewers_names()"
@@ -304,10 +288,10 @@
           },
           {
             "result": {
-              "duration": 2094000000,
+              "duration": 2080000000,
               "status": "passed"
             },
-            "line": 18,
+            "line": 51,
             "name": "The user is able to visit the reviewers\u0027 profiles.",
             "match": {
               "location": "com.CRM_7.stepDefinitions.StepDefs_803.the_user_is_able_to_visit_the_reviewers_profiles()"
@@ -317,23 +301,15 @@
         ],
         "tags": [
           {
+            "name": "@ZULL-809"
+          },
+          {
             "name": "@ZULL-803"
           }
         ]
-      }
-    ],
-    "name": "User should be able to click on reviewers\u0027 names and visit their profiles.",
-    "description": "",
-    "id": "user-should-be-able-to-click-on-reviewers--names-and-visit-their-profiles.",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-803_enda.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
+      },
       {
-        "line": 2,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -341,10 +317,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7241000000,
+              "duration": 7766000000,
               "status": "passed"
             },
-            "line": 3,
+            "line": 6,
             "name": "User logs in with valid credentials",
             "match": {
               "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
@@ -354,11 +330,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-03T10:03:44.722Z",
+        "start_timestamp": "2021-12-03T10:34:37.889Z",
         "before": [
           {
             "result": {
-              "duration": 2541000000,
+              "duration": 2635000000,
               "status": "passed"
             },
             "match": {
@@ -366,14 +342,14 @@
             }
           }
         ],
-        "line": 15,
+        "line": 63,
         "name": "User should be able to add others\u0027 posts to favorite by clicking on the Star icon.",
         "description": "",
-        "id": "user-should-be-able-to-add-others--posts-to-favorite-by-clicking-on-the-star-icon.;user-should-be-able-to-add-others--posts-to-favorite-by-clicking-on-the-star-icon.",
+        "id": ";user-should-be-able-to-add-others--posts-to-favorite-by-clicking-on-the-star-icon.",
         "after": [
           {
             "result": {
-              "duration": 674000000,
+              "duration": 686000000,
               "status": "passed"
             },
             "match": {
@@ -386,10 +362,10 @@
         "steps": [
           {
             "result": {
-              "duration": 31000000,
+              "duration": 20000000,
               "status": "passed"
             },
-            "line": 16,
+            "line": 64,
             "name": "The user is on the Portal page.",
             "match": {
               "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
@@ -398,10 +374,10 @@
           },
           {
             "result": {
-              "duration": 120000000,
+              "duration": 138000000,
               "status": "passed"
             },
-            "line": 17,
+            "line": 65,
             "name": "The user clicks on the star.",
             "match": {
               "location": "com.CRM_7.stepDefinitions.StepDefs_804.theUserClicksOnTheStar()"
@@ -410,10 +386,10 @@
           },
           {
             "result": {
-              "duration": 50000000,
+              "duration": 37000000,
               "status": "passed"
             },
-            "line": 18,
+            "line": 66,
             "name": "The user is able to click the star icon.",
             "match": {
               "location": "com.CRM_7.stepDefinitions.StepDefs_804.theUserIsAbleToClickTheStarIcon()"
@@ -423,80 +399,22 @@
         ],
         "tags": [
           {
+            "name": "@ZULL-809"
+          },
+          {
             "name": "@ZULL-804"
           }
         ]
       }
     ],
-    "name": "User should be able to add others\u0027 posts to favorite by clicking on the Star icon.",
+    "name": "",
     "description": "",
-    "id": "user-should-be-able-to-add-others--posts-to-favorite-by-clicking-on-the-star-icon.",
+    "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-804_enda.feature",
-    "tags": []
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2021-12-03T10:03:55.395Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2518000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 3,
-        "name": "Login",
-        "description": "",
-        "id": "login;login",
-        "after": [
-          {
-            "result": {
-              "duration": 698000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7297000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User logs in with valid credentials",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
-            },
-            "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          }
-        ]
-      }
-    ],
-    "name": "Login",
-    "description": "",
-    "id": "login",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/@ZULL-809.feature",
     "tags": [
       {
-        "name": "@login",
+        "name": "@ZULL-809",
         "type": "Tag",
         "location": {
           "line": 1,
