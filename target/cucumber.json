@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-25T20:32:50.763Z",
+        "start_timestamp": "2021-12-03T20:39:59.635Z",
         "before": [
           {
             "result": {
-              "duration": 4154000000,
+              "duration": 4068000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "",
+        "line": 10,
+        "name": "TC01-User should be able to see default filters as \"my activity, work, favorite, announcements, and workflows\"",
         "description": "",
-        "id": "login;",
+        "id": ";tc01-user-should-be-able-to-see-default-filters-as-\"my-activity--work--favorite--announcements--and-workflows\"",
         "after": [
           {
             "result": {
-              "duration": 141000000,
+              "duration": 1242000000,
               "status": "passed"
             },
             "match": {
@@ -35,32 +35,518 @@
         "steps": [
           {
             "result": {
-              "duration": 6508000000,
+              "duration": 5679000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 11,
             "name": "User logs in with valid credentials",
             "match": {
               "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2147000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on Filter and search box",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_click_on_Filter_and_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 402000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should see default filtres as following options",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_should_see_default_filtres_as_following_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "WORK"
+                ]
+              },
+              {
+                "cells": [
+                  "FAVORITES"
+                ]
+              },
+              {
+                "cells": [
+                  "MY ACTIVITY"
+                ]
+              },
+              {
+                "cells": [
+                  "ANNOUNCEMENTS"
+                ]
+              },
+              {
+                "cells": [
+                  "WORKFLOWS"
+                ]
+              }
+            ],
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@ZULL-816"
+          },
+          {
+            "name": "@ZULL-811"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-03T20:40:13.290Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2551000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "TC02-User should be able add field",
+        "description": "",
+        "id": ";tc02-user-should-be-able-add-field",
+        "after": [
+          {
+            "result": {
+              "duration": 962000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5333000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2121000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User click on Filter and search box",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_click_on_Filter_and_search_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2090000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User click on add field button",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_click_on_add_field_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 92000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User select \"Favorites\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Favorites\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_select_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "\"Favorites\" field should be displayed in field area",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Favorites\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.field_should_be_displayed_in_field_area(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ZULL-816"
+          },
+          {
+            "name": "@ZULL-812"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-03T20:40:26.488Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3118000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "TC03-User should be able to remove field",
+        "description": "",
+        "id": ";tc03-user-should-be-able-to-remove-field",
+        "after": [
+          {
+            "result": {
+              "duration": 855000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5979000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2115000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User click on Filter and search box",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_click_on_Filter_and_search_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2090000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User click on add field button",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_click_on_add_field_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 92000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User deselect \"Date\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Date\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_deselect_field(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ZULL-816"
+          },
+          {
+            "name": "@ZULL-813"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-03T20:40:40.738Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2931000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "TC04-User should be able to save filter",
+        "description": "",
+        "id": ";tc04-user-should-be-able-to-save-filter",
+        "after": [
+          {
+            "result": {
+              "duration": 991000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4922000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2115000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User click on Filter and search box",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_click_on_Filter_and_search_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User click on save filter button",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_click_on_save_filter_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 186000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User should be able to enter a filter name like \"TEST\" and save it",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TEST\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_should_be_able_to_enter_a_filter_name_like_and_save_it(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User should see saved filter \"TEST\" in the filter column.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TEST\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_should_see_saved_filter_in_the_filter_column(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ZULL-816"
+          },
+          {
+            "name": "@ZULL-814"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-03T20:40:52.015Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2573000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 48,
+        "name": "TC05-User should be able to reset filters to default",
+        "description": "",
+        "id": ";tc05-user-should-be-able-to-reset-filters-to-default",
+        "after": [
+          {
+            "result": {
+              "duration": 1008000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5537000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2144000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "User click on Filter and search box",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_click_on_Filter_and_search_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "User click on restore default fields button",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_click_on_restore_default_fields_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User should see default fields as following options",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_should_see_default_fields_as_following_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Date"
+                ]
+              },
+              {
+                "cells": [
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "Author"
+                ]
+              },
+              {
+                "cells": [
+                  "To"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ZULL-816"
+          },
+          {
+            "name": "@ZULL-815"
           }
         ]
       }
     ],
-    "name": "login",
+    "name": "",
     "description": "",
-    "id": "login",
+    "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/TestExecution_ZULL816.feature",
     "tags": [
       {
-        "name": "@login",
+        "name": "@ZULL-816",
         "type": "Tag",
         "location": {
           "line": 1,
