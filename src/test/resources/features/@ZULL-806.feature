@@ -16,7 +16,9 @@ Feature:
 	Scenario: User should be able to add a Department
 		
 		Given the user is on the Portal Page
-		And the user clicks on the employees function
+		And the user clicks on the employees
 		When the user clicks on the Add department button
-		Then the user is able to add a department
+		Then the user should see add department pop-up
+		Then the user is able to add a department name
+		Then the user clicks on add button
 		

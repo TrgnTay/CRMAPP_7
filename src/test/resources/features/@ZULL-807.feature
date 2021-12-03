@@ -15,9 +15,7 @@ Feature:
 	@ZULL-807
 	Scenario: User should be able to find employees by search box.
 		
-		
-		Given the user is on the Portal Page
-		And the user clicks on the employees function
+
 		And the user clicks on the Find Employee button
 		When the user sees the search box
 		Then the user is able to search employees by email
