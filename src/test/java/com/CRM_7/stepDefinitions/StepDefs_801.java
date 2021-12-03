@@ -26,7 +26,7 @@ public class StepDefs_801 {
         Assert.assertTrue(actualPagetitle.contains(expectedPageTitle));
     }
 
-   @When("The user clicks on the comment, the user is able to make a comment on the employee's posts.")
+   @When("The user clicks on the comment, the user is able to make a comment on the employees' posts.")
     public void the_user_clicks_on_the_comment_the_user_is_able_to_make_a_comment_on_the_employee_s_posts() {
 
 

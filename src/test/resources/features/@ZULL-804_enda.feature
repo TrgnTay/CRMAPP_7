@@ -1,4 +1,6 @@
-Feature: 
+Feature:  User should be able to add others' posts to favorite by clicking on the Star icon.
+	Background:
+		Given User logs in with valid credentials
 
 	#*User Story:* As a user, I should be able to interact with employees on the posts that I have access to.
 	#
@@ -12,6 +14,5 @@ Feature:
 	@ZULL-804
 	Scenario: User should be able to add others' posts to favorite by clicking on the Star icon.
 		Given The user is on the Portal page.
-		When The user hovers on the star icon of the helpdesk9@cybertekschool.com and add to favorites message appears.
-		When The user clicks on the star, the is able to click the star icon.
-		Then The user sees romove from the favorites message, after clicking the star icon.
+		When The user clicks on the star.
+		Then The user is able to click the star icon.

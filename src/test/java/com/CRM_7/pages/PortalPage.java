@@ -70,6 +70,10 @@ public WebElement calendar;
     @FindBy(xpath = "//span[.='Ginger Cat']")
     public WebElement gingerProfileName;
 
+    @FindBy(xpath = " (//div[@title='Add to favorites'])[1]")
+    public WebElement starIcon;
+
+
 
 
 

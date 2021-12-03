@@ -10,7 +10,7 @@ import org.junit.Assert;
 public class StepDefs_802 {
     PortalPage portalPage= new PortalPage();
     Driver driver;
-    @When("The user clicks on the like, the user is able to like other reviewer's comments.")
+    @When("The user clicks on the like, the user is able to like other reviewers' comments.")
     public void the_user_clicks_on_the_like_the_user_is_able_to_like_other_reviewer_s_comments() {
         portalPage.likeOthersComment.click();
         Assert.assertTrue(portalPage.likeOthersComment.isDisplayed());

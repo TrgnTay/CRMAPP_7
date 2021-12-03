@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7010000000,
+              "duration": 6797000000,
               "status": "passed"
             },
             "line": 3,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-02T23:51:55.083Z",
+        "start_timestamp": "2021-12-03T09:56:29.816Z",
         "before": [
           {
             "result": {
-              "duration": 3774000000,
+              "duration": 2791000000,
               "status": "passed"
             },
             "match": {
@@ -37,13 +37,13 @@
           }
         ],
         "line": 15,
-        "name": "User should be able to click on reviewers\u0027 names and visit their profiles.",
+        "name": "User should be able to add others\u0027 posts to favorite by clicking on the Star icon.",
         "description": "",
-        "id": "user-should-be-able-to-click-on-reviewers--names-and-visit-their-profiles.;user-should-be-able-to-click-on-reviewers--names-and-visit-their-profiles.",
+        "id": "user-should-be-able-to-add-others--posts-to-favorite-by-clicking-on-the-star-icon.;user-should-be-able-to-add-others--posts-to-favorite-by-clicking-on-the-star-icon.",
         "after": [
           {
             "result": {
-              "duration": 753000000,
+              "duration": 679000000,
               "status": "passed"
             },
             "match": {
@@ -56,7 +56,7 @@
         "steps": [
           {
             "result": {
-              "duration": 31000000,
+              "duration": 19000000,
               "status": "passed"
             },
             "line": 16,
@@ -68,41 +68,41 @@
           },
           {
             "result": {
-              "duration": 4257000000,
+              "duration": 201000000,
               "status": "passed"
             },
             "line": 17,
-            "name": "The user is able to click on reviewers\u0027 names.",
+            "name": "The user clicks on the star, the user is able to click the star icon.",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.StepDefs_803.the_user_is_able_to_click_on_reviewers_names()"
+              "location": "com.CRM_7.stepDefinitions.StepDefs_804.the_user_clicks_on_the_star_the_user_is_able_to_click_the_star_icon()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2133000000,
+              "duration": 31000000,
               "status": "passed"
             },
             "line": 18,
-            "name": "The user is able to visit the reviewers\u0027 profiles.",
+            "name": "The user sees romove from the favorites message, after clicking the star icon.",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.StepDefs_803.the_user_is_able_to_visit_the_reviewers_profiles()"
+              "location": "com.CRM_7.stepDefinitions.StepDefs_804.the_user_sees_romove_from_the_favorites_message_after_clicking_the_star_icon()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ZULL-803"
+            "name": "@ZULL-804"
           }
         ]
       }
     ],
-    "name": "User should be able to click on reviewers\u0027 names and visit their profiles.",
+    "name": "User should be able to add others\u0027 posts to favorite by clicking on the Star icon.",
     "description": "",
-    "id": "user-should-be-able-to-click-on-reviewers--names-and-visit-their-profiles.",
+    "id": "user-should-be-able-to-add-others--posts-to-favorite-by-clicking-on-the-star-icon.",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-803_enda.feature",
+    "uri": "file:src/test/resources/features/@ZULL-804_enda.feature",
     "tags": []
   }
 ]

@@ -17,6 +17,6 @@ Feature:User should be able to make a comment, like, or unfollow on other employ
 	@ZULL-801
 	Scenario: User should be able to make a comment, like, or unfollow on other employees' posts. 
 		Given The user is on the Portal page.
-     	When The user clicks on the comment, the user is able to make a comment on the employee's posts.
+     	When The user clicks on the comment, the user is able to make a comment on the employees' posts.
 		When The user clicks on the like, the user is able to like the posts.
 		Then The user clicks on the unfollow, the user is able to unfollow the user's posts.
