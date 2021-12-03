@@ -16,7 +16,7 @@ public class StepDefs_802 {
         Assert.assertTrue(portalPage.likeOthersComment.isDisplayed());
     }
 
-    @Then("The user clicks on the reply, the user is able to make a comment on the reviewers's comments.")
+    @Then("The user clicks on the reply, the user is able to make a comment on the reviewers'comments.")
     public void the_user_clicks_on_the_reply_the_user_is_able_to_make_a_comment_on_the_reviewers_s_comments() {
         portalPage.ReplyOtherComment.click();
         Driver.get().switchTo().frame(portalPage.replyIframe);
