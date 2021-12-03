@@ -4,6 +4,7 @@ import com.CRM_7.utilities.BrowserUtils;
 import com.CRM_7.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class AttachLink {
     AppreciationPage appreciationPage = new AppreciationPage();
@@ -29,8 +30,8 @@ public class AttachLink {
 
     @Then("the link should work")
     public void theLinkShouldWork() {
-        Driver.get().switchTo().frame(appreciationPage.linkIframe);
-
+        String link = Driver.get().switchTo().frame(appreciationPage.linkIframe).toString();
+        Assert.assertEquals("youtube", link);
 
     }
 }

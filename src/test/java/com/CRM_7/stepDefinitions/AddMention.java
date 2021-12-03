@@ -39,7 +39,6 @@ public class AddMention {
 
     @Then("{string} is visible as mentioned")
     public void isVisibleAsMentioned(String arg0) {
-        Assert.assertTrue("Verify mentioned person is displayed", appreciationPage.hr76.isDisplayed());
 
     }
 }

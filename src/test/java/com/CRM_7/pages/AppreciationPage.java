@@ -35,7 +35,7 @@ public class AppreciationPage {
     @FindBy(xpath = "//input[@value='Save']")
     public WebElement linkSave;
 
-    @FindBy(xpath = "//div[@class='bxhtmled-dummy-target']")
+    @FindBy(xpath = "(//iframe)[1]")
     public WebElement linkIframe;
 
     @FindBy(css = "span[title='Quote text']")
