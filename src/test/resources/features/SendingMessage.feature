@@ -1,4 +1,4 @@
-@wip2
+@wip
 Feature: Sending Message
   Scenario: Sending Message functionality
     Given User logs in with valid credentials

@@ -35,7 +35,7 @@ public class ActivityStreamPage extends BasePage {
     @FindBy (css = "bx-finder-search-block-cell")
     public WebElement mentionIcon;
 
-    @FindBy (css = ".bx-finder-box-item-t7-name")
+    @FindBy (id = "mention52305705_last_U644")
     public WebElement contactMention;
 
     @FindBy (css= ".feed-add-destination-link")
@@ -44,10 +44,11 @@ public class ActivityStreamPage extends BasePage {
     @FindBy (xpath = "(//div[@class = 'bx-finder-box-item-t7-info']//div)[2]")
     public WebElement Useremail;
 
-    @FindBy (xpath = "((//span[.= 'helpdesk99@cybertekschool.com'])[2]")
+    @FindBy (xpath = "//div[text()='hr77@cybertekschool.com']")
     public WebElement Users;
 
-
+    @FindBy (xpath = "//input[@value='Save']")
+    public WebElement saveLink;
 
     @FindBy (xpath = "//*[@id='bx-b-link-blogPostForm']/span")
     public WebElement linkIcon;

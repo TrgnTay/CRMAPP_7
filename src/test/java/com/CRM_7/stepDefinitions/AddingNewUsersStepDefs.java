@@ -21,7 +21,7 @@ public class AddingNewUsersStepDefs {
     @When("User clicks an email from the pop-up window")
     public void user_clicks_an_email_from_the_pop_up_window() {
 
-        activityStreamPage.Useremail.click();
+        activityStreamPage.Users.click();
         BrowserUtils.waitFor(2);
     }
 
@@ -29,7 +29,7 @@ public class AddingNewUsersStepDefs {
     @Then("Email is displayed in the To: box")
     public void email_is_displayed_in_the_To_box() {
 
-        String expectedEmail = "helpdesk99@cybertekschool.com";
+        String expectedEmail = "hr77@cybertekschool.com";
         String actualEmail = activityStreamPage.Users.getText();
 
         Assert.assertEquals(expectedEmail,actualEmail);

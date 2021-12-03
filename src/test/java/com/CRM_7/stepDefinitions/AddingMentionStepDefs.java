@@ -18,21 +18,23 @@ public class AddingMentionStepDefs {
 
     }
 
-    @When("User Clicks mention field")
-    public void user_Clicks_mention_field() {
+    @When("User selects an email")
+    public void user_selects_an_email() {
+
         BrowserUtils.waitFor(2);
-       //Driver.get().switchTo().alert(mentionTable);
-       activityStreamPage.contactMention.click();
+        //Driver.get().switchTo().alert(mentionTable);
+        //activityStreamPage.contactMention.click();
 
+        activityStreamPage.Users.click();
+        BrowserUtils.waitFor(2);
     }
-
 
 
     @Then("Email is displayed in the message box")
     public void emailIsDisplayedInTheMessageBox() {
         Driver.get().switchTo().frame(activityStreamPage.messageBox);
         BrowserUtils.waitFor(2);
-        String expectedMention = "hr76@cybertekschool.com ";
+        String expectedMention = "hr77@cybertekschool.com ";
         String actualMention = activityStreamPage.textField.getText();
         Assert.assertEquals(expectedMention,actualMention);
         Driver.get().switchTo().defaultContent();
