@@ -12,6 +12,8 @@ public class StepDefs_804 {
     public void theUserClicksOnTheStar() {
         portalPage.starIcon.click();
     }
+
+
     @Then("The user is able to click the star icon.")
     public void theUserIsAbleToClickTheStarIcon() {
         Assert.assertTrue(portalPage.starIcon.isDisplayed());
