@@ -439,11 +439,13 @@
     "line": 2,
     "elements": [
       {
+
         "start_timestamp": "2021-12-03T10:03:55.395Z",
         "before": [
           {
             "result": {
               "duration": 2518000000,
+
               "status": "passed"
             },
             "match": {
@@ -458,7 +460,9 @@
         "after": [
           {
             "result": {
-              "duration": 698000000,
+
+              "duration": 141000000,
+
               "status": "passed"
             },
             "match": {
@@ -471,7 +475,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7297000000,
+
+          
+              "duration": 6508000000,
+              
               "status": "passed"
             },
             "line": 4,
