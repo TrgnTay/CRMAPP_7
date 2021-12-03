@@ -9,14 +9,35 @@ import org.openqa.selenium.support.FindBy;
 public class PortalPage extends BasePage{
 
 
+
     @FindBy(id = "bx-b-mention-blogPostForm")
     public WebElement AddMention;
-
     @FindBy(xpath = "//a[@class='bx-finder-box-tab bx-lm-tab-department']")
 public WebElement dropdownElement;
 
+    @FindBy(xpath = "//span[@class='bxhtmled-top-bar-btn bxhtmled-button-link']")
+    public WebElement linkIcon;
 
+    @FindBy(id = "linkidPostFormLHE_blogPostForm-text")
+    public WebElement linkText;
 
+    @FindBy(id = "linkidPostFormLHE_blogPostForm-href")
+    public WebElement linkUrl;
+
+    @FindBy(id = "undefined")
+    public WebElement Save;
+
+    @FindBy(id = "blog-submit-button-save")
+    public WebElement Send;
+
+    @FindBy(xpath = "//a[@href='http://www.cydeo.com']")
+    public WebElement Cydeolink;
+
+    @FindBy(xpath = "//span[@data-bx-action='quote']")
+    public WebElement quotebtn;
+
+    @FindBy(xpath = "//body[@contenteditable='true']")
+    public WebElement announceBtn;
 
 
 

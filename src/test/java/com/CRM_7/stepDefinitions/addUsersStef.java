@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-public class PortpalStepDef {
+public class addUsersStef {
     @When("User navigates to {string} {string}")
     public void user_navigates_to(String tab, String module) {
         new PortalPage().navigateToModule(tab, module);
@@ -31,13 +31,13 @@ public class PortpalStepDef {
     }
     @When("User selects {string} and {string} from Employees and Departments contact lists")
     public void user_selects_and_from_Employees_and_Departments_contact_lists(String expectedUser1, String expectedUser2) throws InterruptedException {
-        Driver.get().findElement(By.xpath("//div[.='Ginger Cat'][@class='bx-finder-company-department-employee-name']")).click();
+        Driver.get().findElement(By.xpath("//div[.='"+expectedUser1+"'][@class='bx-finder-company-department-employee-name']")).click();
 
         Driver.get().findElement(By.id("bx-destination-tag")).click();
 
         new PortalPage().setdropdownElement();
 
-        Driver.get().findElement(By.xpath("//div[.='Murat Kahveci'][@class='bx-finder-company-department-employee-name']")).click();
+        Driver.get().findElement(By.xpath("//div[.='"+expectedUser2+"'][@class='bx-finder-company-department-employee-name']")).click();
     }
 
     @Then("The input box should show descriptions containing {string} and {string}")

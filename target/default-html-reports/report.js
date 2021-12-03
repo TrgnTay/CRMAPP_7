@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@wip"
+      "name": "@yes"
     }
   ]
 });
@@ -33,7 +33,7 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@wip"
+      "name": "@yes"
     }
   ]
 });
@@ -42,7 +42,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.PortpalStepDef.user_navigates_to(java.lang.String,java.lang.String)"
+  "location": "com.CRM_7.stepDefinitions.addUsersStef.user_navigates_to(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -52,7 +52,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.PortpalStepDef.clicks_Add_Mention_icon()"
+  "location": "com.CRM_7.stepDefinitions.addUsersStef.clicks_Add_Mention_icon()"
 });
 formatter.result({
   "status": "passed"
@@ -62,27 +62,27 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.PortpalStepDef.clicks_Employees_and_Departments()"
+  "location": "com.CRM_7.stepDefinitions.addUsersStef.clicks_Employees_and_Departments()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User selects \"Ginger Cat\" and \"Murat Kahveci\" from Employees and Departments contact lists",
+  "name": "User selects \"Ginger Cat\" and \"HR3 USER\" from Employees and Departments contact lists",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.PortpalStepDef.user_selects_and_from_Employees_and_Departments_contact_lists(java.lang.String,java.lang.String)"
+  "location": "com.CRM_7.stepDefinitions.addUsersStef.user_selects_and_from_Employees_and_Departments_contact_lists(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The input box should show descriptions containing \"Ginger Cat\" and \"Murat Kahveci\"",
+  "name": "The input box should show descriptions containing \"Ginger Cat\" and \"HR3 USER\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.PortpalStepDef.the_input_box_should_show_descriptions_containing_and(java.lang.String,java.lang.String)"
+  "location": "com.CRM_7.stepDefinitions.addUsersStef.the_input_box_should_show_descriptions_containing_and(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
