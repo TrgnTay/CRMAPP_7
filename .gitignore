@@ -1,5 +1,12 @@
 /target/
+
+
+/src/test/java/com/CRM_7/pages/BasePage.java/
+/src/test/java/com/CRM_7/runners/CukesRunner.java/
+
+/target/cucumber.json/
+/target/default-html-reports/report.js/
+/target/test-classes/com/CRM_7/pages/BasePage.class/
+/target/test-classes/com/CRM_7/runners/CukesRunner.class/
+/target/test-classes/features/login.feature/
 /.idea/
-
-
-
