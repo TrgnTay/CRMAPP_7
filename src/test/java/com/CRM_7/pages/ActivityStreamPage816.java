@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class ActivityStreamPage {
+public class ActivityStreamPage816 {
 
-    public ActivityStreamPage(){
+    public ActivityStreamPage816(){
     PageFactory.initElements(Driver.get(), this);
 }
 

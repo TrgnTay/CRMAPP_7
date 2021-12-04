@@ -1,6 +1,6 @@
 package com.CRM_7.stepDefinitions;
 
-import com.CRM_7.pages.ActivityStreamPage;
+import com.CRM_7.pages.ActivityStreamPage816;
 import com.CRM_7.utilities.BrowserUtils;
 import com.CRM_7.utilities.Driver;
 import io.cucumber.java.en.Then;
@@ -8,7 +8,6 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +15,7 @@ import java.util.List;
 
 
 public class FilterAndSearchStepDefs {
-    ActivityStreamPage activityStreamPage = new ActivityStreamPage();
+    ActivityStreamPage816 activityStreamPage = new ActivityStreamPage816();
 
     @When("User click on Filter and search box")
     public void user_click_on_Filter_and_search_box() {
