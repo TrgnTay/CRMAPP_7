@@ -1,6 +1,6 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
 formatter.feature({
-  "name": "login",
+  "name": "Login",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "",
+  "name": "Login",
   "description": "",
   "keyword": "Scenario",
   "tags": [
