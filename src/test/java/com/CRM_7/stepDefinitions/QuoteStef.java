@@ -26,11 +26,11 @@ Driver.get().findElement(By.xpath("//blockquote[@class='bxhtmled-quote']")).clea
 
     }
 
-    @When("clicks send")
-    public void clicks_send() {
-        new PortalPage().Send.click();
-        BrowserUtils.waitFor(2);
-    }
+    //@When("clicks send")
+   // public void clicks_send() {
+      //  new PortalPage().Send.click();
+       // BrowserUtils.waitFor(2);
+   // }
 
 
     @Then("the text {string} should be displayed on the page")

@@ -17,11 +17,11 @@ public class AnnouncementStef {
         Driver.get().switchTo().defaultContent();
     }
 
-    @When("clicks Sendbutton")
-    public void clicks_Sendbutton() {
-        new PortalPage().Send.click();
+   // @When("clicks Sendbutton")
+   // public void clicks_Sendbutton() {
+       // new PortalPage().Send.click();
 
-    }
+    //}
         @Then("the textt {string} should be displayed on the page")
         public void the_textt_should_be_displayed_on_the_page(String string1) {
 

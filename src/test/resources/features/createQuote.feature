@@ -8,7 +8,7 @@ Feature: create a quote
     When User navigates to "More" "Announcement"
     And clicks quote test icon
   And enter "crm project"
-  And clicks send
+  And clicks Send
   Then the text "crm project" should be displayed on the page
 
 
