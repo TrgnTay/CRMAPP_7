@@ -1,11 +1,133 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/addUsers.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AttachLink.feature");
+formatter.feature({
+  "name": "Attach a link",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.background({
+  "name": "log in",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in with valid credentials",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "attach a link by clicking on the link icon",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "User navigates to \"More\" \"Announcement\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.addUsersStef.user_navigates_to(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks Link icon",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.AttachLinkStef.clicks_Link_icon()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "enters \"zerobankApp\" in the text input box",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.AttachLinkStef.enters_in_the_text_input_box(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "copy paste \"http://zero.webappsecurity.com\" in the link input box",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.AttachLinkStef.copy_paste_in_the_link_input_box(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks Save",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.AttachLinkStef.clicks_Save()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks Send",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.AttachLinkStef.clicks_Send()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks zerobankApp",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.AttachLinkStef.clicks_zerobankApp()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the page and the title contains \"Zero - Personal Banking - Loans - Credit Cards\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.AttachLinkStef.the_page_and_the_title_contains(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/features/addUsers.feature");
 formatter.feature({
   "name": "",
   "description": "  add users",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@yes"
+      "name": "@wip"
     }
   ]
 });
@@ -33,7 +155,7 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@yes"
+      "name": "@wip"
     }
   ]
 });
@@ -83,6 +205,180 @@ formatter.step({
 });
 formatter.match({
   "location": "com.CRM_7.stepDefinitions.addUsersStef.the_input_box_should_show_descriptions_containing_and(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/features/createQuote.feature");
+formatter.feature({
+  "name": "create a quote",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.background({
+  "name": "log in",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in with valid credentials",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "create a quote by clicking on the quote text icon",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "User navigates to \"More\" \"Announcement\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.addUsersStef.user_navigates_to(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks quote test icon",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.QuoteStef.clicks_quote_test_icon()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "enter \"crm project\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.QuoteStef.enter(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks send",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.QuoteStef.clicks_send()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the text \"crm project\" should be displayed on the page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.QuoteStef.the_text_should_be_displayed_on_the_page(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/features/sendAnnouncement.feature");
+formatter.feature({
+  "name": "",
+  "description": "  add users",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.background({
+  "name": "log in",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in with valid credentials",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "send an announcement",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "User navigates to \"More\" \"Announcement\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.addUsersStef.user_navigates_to(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "enters \"cest la vie\" in the Announcement input box",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.AnnouncementStef.enters_in_the_Announcement_input_box(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks Sendbutton",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.AnnouncementStef.clicks_Sendbutton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the textt \"cest la vie\" should be displayed on the page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.AnnouncementStef.the_textt_should_be_displayed_on_the_page(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

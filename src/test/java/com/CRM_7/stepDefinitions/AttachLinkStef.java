@@ -10,51 +10,64 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import java.util.Set;
+
 public class AttachLinkStef {
     @When("clicks Link icon")
     public void clicks_Link_icon() {
+
         new PortalPage().linkIcon.click();
     }
 
     @When("enters {string} in the text input box")
     public void enters_in_the_text_input_box(String string1) {
 
-Driver.get().findElement(By.id("linkidPostFormLHE_blogPostForm-text")).sendKeys(string1);
+        Driver.get().findElement(By.id("linkidPostFormLHE_blogPostForm-text")).sendKeys(string1);
     }
 
     @When("copy paste {string} in the link input box")
     public void copy_paste_in_the_link_input_box(String string2) {
-     new PortalPage().linkUrl.sendKeys(string2);
+
+
+        new PortalPage().linkUrl.sendKeys(string2);
     }
 
     @When("clicks Save")
     public void clicks_Save() {
-       new PortalPage().Save.click();
+
+        new PortalPage().Save.click();
+        BrowserUtils.waitFor(3);
     }
 
     @When("clicks Send")
     public void clicks_Send() {
         new PortalPage().Send.click();
-        BrowserUtils.waitFor(2);
-        new PortalPage().Cydeolink.click();
+        BrowserUtils.waitFor(5);
+
+    }
+    @When("clicks zerobankApp")
+    public void clicks_zerobankApp() {
+        new PortalPage().zeroBankLink.click();
         BrowserUtils.waitFor(8);
 
-        WebElement element = Driver.get().findElement(By.xpath("//i[@class='eicon-close']"));
-        if (element.isDisplayed() && element.isEnabled()) {
-            element.click();
+        String currentWindowHandle = Driver.get().getWindowHandle();
+        Set<String> windowHandles = Driver.get().getWindowHandles();
+        for (String handle : windowHandles) {
+            if (!handle.equals(currentWindowHandle)) {
+                Driver.get().switchTo().window(handle);
+            }
+
         }
-
-
-        //Driver.get().findElement(By.xpath("gg")).click();
-        BrowserUtils.waitFor(2);
+        System.out.println("Title after switch new window: " + Driver.get().getTitle());
     }
 
-    @Then("clicks cydeo on the page and the title contains {string}")
-    public void clicks_cydeo_on_the_page_and_the_title_contains(String string3) {
+    @Then("the page and the title contains {string}")
+    public void the_page_and_the_title_contains(String string3) {
 
-        //Driver.get().findElement(By.xpath("//*[text()='Get Started Now']")).click();
-        System.out.println(Driver.get().getTitle());
-Assert.assertTrue(Driver.get().getTitle().contains(string3));
+//Driver.get().navigate().to("http://zero.webappsecurity.com");
+        String actualTitle = Driver.get().getTitle();
+        System.out.println(actualTitle);
+        Assert.assertEquals(string3, actualTitle);
 
 
     }

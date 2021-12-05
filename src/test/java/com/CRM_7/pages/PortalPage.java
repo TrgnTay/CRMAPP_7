@@ -30,8 +30,8 @@ public WebElement dropdownElement;
     @FindBy(id = "blog-submit-button-save")
     public WebElement Send;
 
-    @FindBy(xpath = "//a[@href='http://www.cydeo.com']")
-    public WebElement Cydeolink;
+    @FindBy(xpath = "//a[@href='http://zero.webappsecurity.com']")
+    public WebElement zeroBankLink;
 
     @FindBy(xpath = "//span[@data-bx-action='quote']")
     public WebElement quotebtn;
