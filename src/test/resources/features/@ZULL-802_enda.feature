@@ -10,7 +10,7 @@ Background:
 	# # User should be able to add others' posts to favorite by clicking on the Star icon.
 	#
 	# 
-	@ZULL-802
+	@ZULL-802 @smoke
 	Scenario: User should be able to like or make comments on all other reviewers' comments
 		Given The user is on the Portal page.
 		When The user clicks on the like, the user is able to like other reviewers' comments.

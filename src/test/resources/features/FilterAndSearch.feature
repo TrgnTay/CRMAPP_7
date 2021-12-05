@@ -20,7 +20,7 @@ Feature: Filter and search functionality on Active Stream
     When User select "Favorites" field
     Then "Favorites" field should be displayed in field area
 
-@ZULL-813
+@ZULL-813 @smoke
   Scenario: User should be able to remove field
     Given  User logs in with valid credentials
     And User click on Filter and search box

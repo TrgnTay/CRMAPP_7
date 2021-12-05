@@ -1,87 +1,8 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-809.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/@ZULL-802_enda.feature");
 formatter.feature({
-  "name": "",
+  "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
   "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@ZULL-809"
-    }
-  ]
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User logs in with valid credentials",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "User should be able to make a comment, like, or unfollow on other employees\u0027 posts.",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@ZULL-809"
-    },
-    {
-      "name": "@ZULL-801"
-    }
-  ]
-});
-formatter.step({
-  "name": "The user is on the Portal page.",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user clicks on the comment, the user is able to make a comment on the employees\u0027 posts.",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_clicks_on_the_comment_the_user_is_able_to_make_a_comment_on_the_employee_s_posts()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user clicks on the like, the user is able to like the posts.",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_clicks_on_the_like_the_user_is_able_to_like_the_posts()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user clicks on the unfollow, the user is able to unfollow the user\u0027s posts.",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_clicks_on_the_unfollow_the_user_is_able_to_unfollow_the_user_s_posts()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
+  "keyword": "Feature"
 });
 formatter.background({
   "name": "",
@@ -107,10 +28,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@ZULL-809"
+      "name": "@ZULL-802"
     },
     {
-      "name": "@ZULL-802"
+      "name": "@smoke"
     }
   ]
 });
@@ -135,7 +56,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user clicks on the reply, the user is able to make a comment on the reviewers\u0027s comments.",
+  "name": "The user clicks on the reply, the user is able to make a comment on the reviewers\u0027comments.",
   "keyword": "Then "
 });
 formatter.match({
@@ -147,6 +68,12 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
+formatter.uri("file:src/test/resources/features/AddingMention.feature");
+formatter.feature({
+  "name": "",
+  "description": "",
+  "keyword": "Feature"
+});
 formatter.background({
   "name": "",
   "description": "",
@@ -166,44 +93,54 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "User should be able to click on reviewers\u0027 names and visit their profiles.",
+  "name": "TC -02 NAT - Adding Mention Feature",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@ZULL-809"
+      "name": "@ZULL-798"
     },
     {
-      "name": "@ZULL-803"
+      "name": "@smoke"
     }
   ]
 });
 formatter.step({
-  "name": "The user is on the Portal page.",
+  "name": "User clicks Message button on the top dashboard",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
+  "location": "com.CRM_7.stepDefinitions.ClickingMessageButtonStepDefs.user_clicks_Message_button_on_the_top_dashboard()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user is able to click on reviewers\u0027 names.",
+  "name": "User clicks mention icon",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_803.the_user_is_able_to_click_on_reviewers_names()"
+  "location": "com.CRM_7.stepDefinitions.AddingMentionStepDefs.user_clicks_mention_icon()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user is able to visit the reviewers\u0027 profiles.",
+  "name": "User selects an email",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.AddingMentionStepDefs.user_selects_an_email()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Email is displayed in the message box",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_803.the_user_is_able_to_visit_the_reviewers_profiles()"
+  "location": "com.CRM_7.stepDefinitions.AddingMentionStepDefs.emailIsDisplayedInTheMessageBox()"
 });
 formatter.result({
   "status": "passed"
@@ -211,10 +148,32 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.background({
-  "name": "",
+formatter.uri("file:src/test/resources/features/FilterAndSearch.feature");
+formatter.feature({
+  "name": "Filter and search functionality on Active Stream",
   "description": "",
-  "keyword": "Background"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@FilterAndSearch"
+    }
+  ]
+});
+formatter.scenario({
+  "name": "User should be able to remove field",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@FilterAndSearch"
+    },
+    {
+      "name": "@ZULL-813"
+    },
+    {
+      "name": "@smoke"
+    }
+  ]
 });
 formatter.before({
   "status": "passed"
@@ -229,45 +188,122 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "User click on Filter and search box",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_click_on_Filter_and_search_box()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User click on add field button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_click_on_add_field_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User deselect \"Date\" field",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_deselect_field(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/features/TaskMenu.feature");
+formatter.feature({
+  "name": "As a user, I should be able to assign tasks under the Quick Navigate Menu",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@login"
+    }
+  ]
+});
 formatter.scenario({
-  "name": "User should be able to add others\u0027 posts to favorite by clicking on the Star icon.",
+  "name": "User should be able to send tasks",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@ZULL-809"
+      "name": "@login"
     },
     {
-      "name": "@ZULL-804"
+      "name": "@smoke"
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
-  "name": "The user is on the Portal page.",
+  "name": "User logs in with valid credentials",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
+  "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user clicks on the star.",
+  "name": "User clicks the Task on the top",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_804.theUserClicksOnTheStar()"
+  "location": "com.CRM_7.stepDefinitions.TaskMenuStepDefs.userClicksTheTaskOnTheTop()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user is able to click the star icon.",
+  "name": "User enter the message on the editor text bar \"Chapter1 \"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.TaskMenuStepDefs.userEnterTheMessageOnTheEditorTextBar(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User select the responsible person \"hr66@cybertekschool.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.TaskMenuStepDefs.userSelectTheResponsiblePerson(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks the send button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.TaskMenuStepDefs.userClicksTheSendButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify that user send task successfully and display \"Task has been created\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.StepDefs_804.theUserIsAbleToClickTheStarIcon()"
+  "location": "com.CRM_7.stepDefinitions.TaskMenuStepDefs.verifyThatUserSendTaskSuccessfullyAndDisplay(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

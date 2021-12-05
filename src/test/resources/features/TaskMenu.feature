@@ -22,7 +22,7 @@ Feature: As a user, I should be able to assign tasks under the Quick Navigate Me
     And User clicks the add item button
     Then Verify that  user add the item successfully
 
-
+  @smoke
   Scenario: User should be able to send tasks
     Given User logs in with valid credentials
     When User clicks the Task on the top

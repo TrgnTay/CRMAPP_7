@@ -15,7 +15,7 @@ Feature:
 	#5. User should be able to create a quote by clicking on the Comma icon.
 	#6. User should be able to add mention by clicking on the Add mention icon.
 	#7. User should be able to send a message.
-	@ZULL-798
+	@ZULL-798 @smoke
 	Scenario: TC -02 NAT - Adding Mention Feature
 		    Given User clicks Message button on the top dashboard
 		    When  User clicks mention icon
