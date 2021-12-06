@@ -1,26 +1,26 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/SR01.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/SR02.feature");
 formatter.feature({
-  "name": "SR01 Post news on Company",
+  "name": "SR02 Add tags for News",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@SR01"
+      "name": "@SR02"
     }
   ]
 });
 formatter.scenario({
-  "name": "Post news on Company",
+  "name": "Add tags under news details",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@SR01"
+      "name": "@SR02"
     }
   ]
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User logs in with valid credentials",
@@ -30,17 +30,15 @@ formatter.match({
   "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "the user navigates to company",
+  "name": "the user navigates to company page",
   "keyword": "And "
 });
-formatter.match({
-  "location": "com.CRM_7.stepDefinitions.SR01_stepDefinitions.the_user_navigates_to_company()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
   "name": "user clicks add news",
@@ -50,19 +48,33 @@ formatter.match({
   "location": "com.CRM_7.stepDefinitions.SR01_stepDefinitions.user_clicks_add_news()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user is able to post news",
+  "name": "user clicks Details",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user is able to add tags in the tag line and check the box",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user is able to post news with tags",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "com.CRM_7.stepDefinitions.SR01_stepDefinitions.user_is_able_to_post_news()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });

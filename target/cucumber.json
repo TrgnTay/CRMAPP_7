@@ -3,12 +3,12 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-12-06T21:05:21.278Z",
+        "start_timestamp": "2021-12-06T21:39:40.051Z",
         "before": [
           {
             "result": {
-              "duration": 7060000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
@@ -16,14 +16,13 @@
           }
         ],
         "line": 3,
-        "name": "Post news on Company",
+        "name": "Add tags under news details",
         "description": "",
-        "id": "sr01-post-news-on-company;post-news-on-company",
+        "id": "sr02-add-tags-for-news;add-tags-under-news-details",
         "after": [
           {
             "result": {
-              "duration": 1300000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "match": {
               "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -35,8 +34,8 @@
         "steps": [
           {
             "result": {
-              "duration": 8683000000,
-              "status": "passed"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 4,
             "name": "User logs in with valid credentials",
@@ -47,20 +46,17 @@
           },
           {
             "result": {
-              "duration": 2207000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 5,
-            "name": "the user navigates to company",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.SR01_stepDefinitions.the_user_navigates_to_company()"
-            },
+            "name": "the user navigates to company page",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 12794000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 6,
             "name": "user clicks add news",
@@ -71,32 +67,47 @@
           },
           {
             "result": {
-              "duration": 4389000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 7,
-            "name": "user is able to post news",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.SR01_stepDefinitions.user_is_able_to_post_news()"
+            "name": "user clicks Details",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
+            "line": 8,
+            "name": "user is able to add tags in the tag line and check the box",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "user is able to post news with tags",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@SR01"
+            "name": "@SR02"
           }
         ]
       }
     ],
-    "name": "SR01 Post news on Company",
+    "name": "SR02 Add tags for News",
     "description": "",
-    "id": "sr01-post-news-on-company",
+    "id": "sr02-add-tags-for-news",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/SR01.feature",
+    "uri": "file:src/test/resources/features/SR02.feature",
     "tags": [
       {
-        "name": "@SR01",
+        "name": "@SR02",
         "type": "Tag",
         "location": {
           "line": 1,
