@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/TC01.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/MRT_TC01.feature");
 formatter.feature({
   "name": "MRT-TC01 User sets reminder",
   "description": "",
@@ -37,7 +37,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.TC01_StepDefinitions.user_clicks_Event_icon()"
+  "location": "com.CRM_7.stepDefinitions.MRT_TC01_StepDefinitions.user_clicks_Event_icon()"
 });
 formatter.result({
   "status": "passed"
@@ -47,7 +47,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.CRM_7.stepDefinitions.TC01_StepDefinitions.user_should_be_able_to_set_a_reminder()"
+  "location": "com.CRM_7.stepDefinitions.MRT_TC01_StepDefinitions.user_should_be_able_to_set_a_reminder()"
 });
 formatter.result({
   "status": "passed"

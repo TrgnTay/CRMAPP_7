@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-12-06T10:22:58.636Z",
+        "start_timestamp": "2021-12-06T10:28:13.160Z",
         "before": [
           {
             "result": {
-              "duration": 2312000000,
+              "duration": 2349000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 130000000,
+              "duration": 126000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3604000000,
+              "duration": 3735000000,
               "status": "passed"
             },
             "line": 4,
@@ -47,25 +47,25 @@
           },
           {
             "result": {
-              "duration": 61000000,
+              "duration": 2074000000,
               "status": "passed"
             },
             "line": 5,
             "name": "user clicks Event icon",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.TC01_StepDefinitions.user_clicks_Event_icon()"
+              "location": "com.CRM_7.stepDefinitions.MRT_TC01_StepDefinitions.user_clicks_Event_icon()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 266000000,
+              "duration": 26000000,
               "status": "passed"
             },
             "line": 6,
             "name": "user should be able to set a reminder",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.TC01_StepDefinitions.user_should_be_able_to_set_a_reminder()"
+              "location": "com.CRM_7.stepDefinitions.MRT_TC01_StepDefinitions.user_should_be_able_to_set_a_reminder()"
             },
             "keyword": "Then "
           }
@@ -81,7 +81,7 @@
     "description": "",
     "id": "mrt-tc01-user-sets-reminder",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/TC01.feature",
+    "uri": "file:src/test/resources/features/MRT_TC01.feature",
     "tags": [
       {
         "name": "@TC01",
