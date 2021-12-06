@@ -1,9 +1,9 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 2,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 5683000000,
+              "duration": 6080000000,
               "status": "passed"
             },
-            "line": 3,
+            "line": 4,
             "name": "User logs in with valid credentials",
             "match": {
               "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-03T12:22:47.981Z",
+        "start_timestamp": "2021-12-06T13:08:05.277Z",
         "before": [
           {
             "result": {
-              "duration": 4729000000,
+              "duration": 4178000000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 17,
-        "name": "User should be able to find employees by search box.",
+        "line": 18,
+        "name": "User should be able to add a Department",
         "description": "",
-        "id": ";user-should-be-able-to-find-employees-by-search-box.",
+        "id": ";user-should-be-able-to-add-a-department",
         "after": [
           {
             "result": {
-              "duration": 1129000000,
+              "duration": 795000000,
               "status": "passed"
             },
             "match": {
@@ -56,10 +56,22 @@
         "steps": [
           {
             "result": {
-              "duration": 2257000000,
+              "duration": 5038000000,
               "status": "passed"
             },
             "line": 19,
+            "name": "the user is on the Portal Page",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.AddDepartmentStepDefs.the_user_is_on_the_Portal_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2505000000,
+              "status": "passed"
+            },
+            "line": 20,
             "name": "the user clicks on the employees",
             "match": {
               "location": "com.CRM_7.stepDefinitions.AddDepartmentStepDefs.the_user_clicks_on_the_employees()"
@@ -68,10 +80,132 @@
           },
           {
             "result": {
-              "duration": 1785000000,
+              "duration": 3174000000,
               "status": "passed"
             },
-            "line": 20,
+            "line": 21,
+            "name": "the user clicks on the Add department button",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.AddDepartmentStepDefs.the_user_clicks_on_the_Add_department_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 145000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user should see add department pop-up",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.AddDepartmentStepDefs.theUserShouldSeeAddDepartmentPopUp()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 188000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user is able to add a department name",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.AddDepartmentStepDefs.the_user_is_able_to_add_a_department()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3133000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user clicks on add button",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.AddDepartmentStepDefs.theUserClicksOnAddButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ZULL-810"
+          },
+          {
+            "name": "@ZULL-806"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6137000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-06T13:08:30.617Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2890000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "User should be able to find employees by search box.",
+        "description": "",
+        "id": ";user-should-be-able-to-find-employees-by-search-box.",
+        "after": [
+          {
+            "result": {
+              "duration": 725000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4418000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "the user clicks on the employees",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.AddDepartmentStepDefs.the_user_clicks_on_the_employees()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2133000000,
+              "status": "passed"
+            },
+            "line": 44,
             "name": "the user clicks on the Find Employee button",
             "match": {
               "location": "com.CRM_7.stepDefinitions.SearchBoxStepDefs.the_user_clicks_on_the_Find_Employee_button()"
@@ -80,10 +214,10 @@
           },
           {
             "result": {
-              "duration": 126000000,
+              "duration": 84000000,
               "status": "passed"
             },
-            "line": 21,
+            "line": 45,
             "name": "the user sees the search box",
             "match": {
               "location": "com.CRM_7.stepDefinitions.SearchBoxStepDefs.the_user_sees_the_search_box()"
@@ -92,10 +226,10 @@
           },
           {
             "result": {
-              "duration": 3127000000,
+              "duration": 3198000000,
               "status": "passed"
             },
-            "line": 22,
+            "line": 46,
             "name": "the user is able to search employees by search box",
             "match": {
               "location": "com.CRM_7.stepDefinitions.SearchBoxStepDefs.the_user_is_able_to_search_employees_by_email()"
@@ -105,7 +239,96 @@
         ],
         "tags": [
           {
+            "name": "@ZULL-810"
+          },
+          {
             "name": "@ZULL-807"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5613000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-06T13:08:50.213Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2856000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 59,
+        "name": "User should be able to display the Company Structure",
+        "description": "",
+        "id": ";user-should-be-able-to-display-the-company-structure",
+        "after": [
+          {
+            "result": {
+              "duration": 888000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2935000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "the user clicks on the employees",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.AddDepartmentStepDefs.the_user_clicks_on_the_employees()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 97000000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "the user is able to display the Company Structure",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.CompanyStructureStepDefs.the_user_is_able_to_display_the_Company_Structure()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ZULL-810"
+          },
+          {
+            "name": "@ZULL-808"
           }
         ]
       }
@@ -114,7 +337,16 @@
     "description": "",
     "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-807.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/1.feature",
+    "tags": [
+      {
+        "name": "@ZULL-810",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
