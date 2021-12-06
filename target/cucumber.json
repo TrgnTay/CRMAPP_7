@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-12-05T23:03:25.847Z",
+        "start_timestamp": "2021-12-06T10:22:58.636Z",
         "before": [
           {
             "result": {
-              "duration": 2788000000,
+              "duration": 2312000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 199000000,
+              "duration": 130000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3881000000,
+              "duration": 3604000000,
               "status": "passed"
             },
             "line": 4,
@@ -47,22 +47,10 @@
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 61000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "the user clicks Event",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.TC01_StepDefinitions.the_user_clicks_Event()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 70000000,
-              "status": "passed"
-            },
-            "line": 6,
             "name": "user clicks Event icon",
             "match": {
               "location": "com.CRM_7.stepDefinitions.TC01_StepDefinitions.user_clicks_Event_icon()"
@@ -71,10 +59,10 @@
           },
           {
             "result": {
-              "duration": 247000000,
+              "duration": 266000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "user should be able to set a reminder",
             "match": {
               "location": "com.CRM_7.stepDefinitions.TC01_StepDefinitions.user_should_be_able_to_set_a_reminder()"

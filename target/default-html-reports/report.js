@@ -33,16 +33,6 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks Event",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.CRM_7.stepDefinitions.TC01_StepDefinitions.the_user_clicks_Event()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
   "name": "user clicks Event icon",
   "keyword": "When "
 });
