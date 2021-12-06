@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-12-05T21:57:23.412Z",
+        "start_timestamp": "2021-12-06T00:55:38.834Z",
         "before": [
           {
             "result": {
-              "duration": 15144000000,
+              "duration": 8601000000,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 3,
-        "name": "Login",
+        "name": "Post news on Company",
         "description": "",
-        "id": "login;login",
+        "id": "sr01-post-news-on-company;post-news-on-company",
         "after": [
           {
             "result": {
-              "duration": 1351000000,
+              "duration": 1306000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10791000000,
+              "duration": 6851000000,
               "status": "passed"
             },
             "line": 4,
@@ -44,23 +44,59 @@
               "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1381000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user navigates to company",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.SR01_stepDefinitions.the_user_navigates_to_company()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6319000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks add news",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.SR01_stepDefinitions.user_clicks_add_news()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3099000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is able to post news",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.SR01_stepDefinitions.user_is_able_to_post_news()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@SR01"
           }
         ]
       }
     ],
-    "name": "Login",
+    "name": "SR01 Post news on Company",
     "description": "",
-    "id": "login",
+    "id": "sr01-post-news-on-company",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/SR01.feature",
     "tags": [
       {
-        "name": "@login",
+        "name": "@SR01",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -1,5 +1,5 @@
-@company
-  Feature:SR-T01-Post news on Company
+@SR01
+  Feature:SR01 Post news on Company
     Scenario: Post news on Company
       Given User logs in with valid credentials
       And the user navigates to company

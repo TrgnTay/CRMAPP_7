@@ -1,21 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/SR01.feature");
 formatter.feature({
-  "name": "Login",
+  "name": "SR01 Post news on Company",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@login"
+      "name": "@SR01"
     }
   ]
 });
 formatter.scenario({
-  "name": "Login",
+  "name": "Post news on Company",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@login"
+      "name": "@SR01"
     }
   ]
 });
@@ -28,6 +28,36 @@ formatter.step({
 });
 formatter.match({
   "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user navigates to company",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.SR01_stepDefinitions.the_user_navigates_to_company()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks add news",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.SR01_stepDefinitions.user_clicks_add_news()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is able to post news",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.CRM_7.stepDefinitions.SR01_stepDefinitions.user_is_able_to_post_news()"
 });
 formatter.result({
   "status": "passed"
