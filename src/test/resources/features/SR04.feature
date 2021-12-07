@@ -4,6 +4,6 @@
       Given User logs in with valid credentials
       And the user navigates to company
       And the user clicks on Add News
-      When user clicks one of Text/HTML/Visual Editor
+      When user clicks one of Text HTML Visual Editor
       Then the clicked option is selected
 

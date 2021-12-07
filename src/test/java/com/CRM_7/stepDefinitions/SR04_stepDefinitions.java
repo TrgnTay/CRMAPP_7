@@ -25,7 +25,7 @@ public class SR04_stepDefinitions {
     }
 
 
-    @When("user clicks one of Text\\/HTML\\/Visual Editor")
+    @When("user clicks one of Text HTML Visual Editor")
     public void user_clicks_one_of_Text_HTML_Visual_Editor() {
         NewsPage.TextCheckbox.click();
         BrowserUtils.waitFor(1);
