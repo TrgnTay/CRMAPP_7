@@ -1,4 +1,4 @@
-@MRT_TC02
+@MRT_TC02 @smoke
 Feature: MRT_TC02 User should be able to see event details parameters as Availability, Repeat, Calendar, Importance
 
 	Background:
