@@ -10,6 +10,18 @@ public class MrtEventsPage extends BasePage {
         PageFactory.initElements(Driver.get(), this);
     }
 
+    @FindBy(xpath = "//button[@id=\"blog-submit-button-save\"]")
+    public WebElement SendBtn;
+
+    @FindBy(xpath = "//input[@id=\"feed-cal-event-namecal_3Jcl\"]")
+    public WebElement EventName;
+
+    @FindBy(xpath = "//label[@for=\"event-accessibilitycal_3Jcl\"]")
+    public WebElement MoreAvailability;
+
+    @FindBy(xpath = "//span[@class=\"feed-event-more-link-text\"][1]")
+    public WebElement MoreLink;
+
     @FindBy(xpath = "//input[@id=\"event-locationcal_3Jcl\"]")
     public WebElement EventLocation;
 
