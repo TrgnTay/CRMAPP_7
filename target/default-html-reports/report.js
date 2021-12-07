@@ -1,6 +1,6 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/1_ZULL-828.feature");
 formatter.feature({
-  "name": "",
+  "name": "MRT-ZULL-785-TEST EXECUTION",
   "description": "",
   "keyword": "Feature",
   "tags": [
