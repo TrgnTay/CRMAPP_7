@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/CRM_7/stepDefinitions",
         dryRun = false,
-        tags = "@TC01"
+        tags = "@MRT_TC02"
 )
 public class CukesRunner {
 }

@@ -10,6 +10,9 @@ public class MrtEventsPage extends BasePage {
         PageFactory.initElements(Driver.get(), this);
     }
 
+    @FindBy(xpath = "//input[@id=\"event-locationcal_3Jcl\"]")
+    public WebElement EventLocation;
+
     @FindBy(xpath = "//span[@id=\"feed-add-post-form-tab-calendar\"]")
     public WebElement EventBtn;
 
