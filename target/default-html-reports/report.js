@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@smoke"
+      "name": "@ZULL-846"
     }
   ]
 });
@@ -29,7 +29,7 @@ formatter.result({
 });
 formatter.step({
   "name": "Navigate to Appreciation module",
-  "keyword": "And "
+  "keyword": "Given "
 });
 formatter.match({
   "location": "com.CRM_7.stepDefinitions.AppreciationPage_StepDefinitions.navigateToAppreciationModule()"
@@ -38,12 +38,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Add mention function",
+  "name": "Mention Feature",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@smoke"
+      "name": "@ZULL-846"
+    },
+    {
+      "name": "@ZULL-841"
     }
   ]
 });
@@ -120,7 +123,7 @@ formatter.result({
 });
 formatter.step({
   "name": "Navigate to Appreciation module",
-  "keyword": "And "
+  "keyword": "Given "
 });
 formatter.match({
   "location": "com.CRM_7.stepDefinitions.AppreciationPage_StepDefinitions.navigateToAppreciationModule()"
@@ -129,12 +132,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Adding users from contact list, employees and departments function",
+  "name": "Adding users feature",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@smoke"
+      "name": "@ZULL-846"
+    },
+    {
+      "name": "@ZULL-842"
     }
   ]
 });
@@ -211,7 +217,7 @@ formatter.result({
 });
 formatter.step({
   "name": "Navigate to Appreciation module",
-  "keyword": "And "
+  "keyword": "Given "
 });
 formatter.match({
   "location": "com.CRM_7.stepDefinitions.AppreciationPage_StepDefinitions.navigateToAppreciationModule()"
@@ -220,12 +226,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Quote creation function",
+  "name": "Quote function",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@smoke"
+      "name": "@ZULL-846"
+    },
+    {
+      "name": "@ZULL-843"
     }
   ]
 });
@@ -282,7 +291,7 @@ formatter.result({
 });
 formatter.step({
   "name": "Navigate to Appreciation module",
-  "keyword": "And "
+  "keyword": "Given "
 });
 formatter.match({
   "location": "com.CRM_7.stepDefinitions.AppreciationPage_StepDefinitions.navigateToAppreciationModule()"
@@ -291,15 +300,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Adding link function",
+  "name": "Link feature",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@smoke"
+      "name": "@ZULL-846"
     },
     {
-      "name": "@wip"
+      "name": "@ZULL-844"
     }
   ]
 });
