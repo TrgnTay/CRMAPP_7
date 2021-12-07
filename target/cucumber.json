@@ -3,12 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-12-07T00:36:13.084Z",
+        "start_timestamp": "2021-12-07T01:36:02.365Z",
         "before": [
           {
             "result": {
-              "duration": 38345000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "match": {
               "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
@@ -16,14 +15,13 @@
           }
         ],
         "line": 3,
-        "name": "MRT_TC02 User selects events location",
+        "name": "MRT_TC03 User selects events location",
         "description": "",
-        "id": "mrt-tc02-user-selects-events-location;mrt-tc02-user-selects-events-location",
+        "id": "mrt-tc03-user-selects-events-location;mrt-tc03-user-selects-events-location",
         "after": [
           {
             "result": {
-              "duration": 464000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "match": {
               "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -35,8 +33,8 @@
         "steps": [
           {
             "result": {
-              "duration": 8554000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 4,
             "name": "User logs in with valid credentials",
@@ -47,8 +45,8 @@
           },
           {
             "result": {
-              "duration": 2666000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 5,
             "name": "user clicks Event icon",
@@ -59,32 +57,29 @@
           },
           {
             "result": {
-              "duration": 6000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 6,
-            "name": "user should be able to set event location from the first index of dropdown",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.MRT_TC02_StepDefinitions.user_should_be_able_to_set_event_location_from_the_first_index_of_dropdown()"
-            },
+            "name": "User should be able to click on More to see the event details",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@MRT_TC02"
+            "name": "@MRT_TC03"
           }
         ]
       }
     ],
-    "name": "MRT_TC02 User selects events location",
+    "name": "MRT_TC03 User selects events location",
     "description": "",
-    "id": "mrt-tc02-user-selects-events-location",
+    "id": "mrt-tc03-user-selects-events-location",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/MRT_TC02.feature",
+    "uri": "file:src/test/resources/features/MRT_TC03.feature",
     "tags": [
       {
-        "name": "@MRT_TC02",
+        "name": "@MRT_TC03",
         "type": "Tag",
         "location": {
           "line": 1,
