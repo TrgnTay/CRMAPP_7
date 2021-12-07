@@ -1,243 +1,34 @@
 [
   {
-    "line": 1,
-    "elements": [
-      {
-        "line": 2,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3891000000,
-              "status": "passed"
-            },
-            "line": 3,
-            "name": "User logs in with valid credentials",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-12-05T06:56:54.834Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2409000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
-        "description": "",
-        "id": "user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments;user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments",
-        "after": [
-          {
-            "result": {
-              "duration": 113000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 78000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "The user is on the Portal page.",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.StepDefs_801.the_user_is_on_the_Portal_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 274000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "The user clicks on the like, the user is able to like other reviewers\u0027 comments.",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.StepDefs_802.the_user_clicks_on_the_like_the_user_is_able_to_like_other_reviewer_s_comments()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2514000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "The user clicks on the reply, the user is able to make a comment on the reviewers\u0027comments.",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.StepDefs_802.the_user_clicks_on_the_reply_the_user_is_able_to_make_a_comment_on_the_reviewers_s_comments()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@ZULL-802"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      }
-    ],
-    "name": "User should be able to like or make comments on all other reviewers\u0027 comments",
-    "description": "",
-    "id": "user-should-be-able-to-like-or-make-comments-on-all-other-reviewers--comments",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/@ZULL-802_enda.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3793000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User logs in with valid credentials",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-12-05T06:57:04.197Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1641000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "TC -02 NAT - Adding Mention Feature",
-        "description": "",
-        "id": ";tc--02-nat---adding-mention-feature",
-        "after": [
-          {
-            "result": {
-              "duration": 116000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2062000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User clicks Message button on the top dashboard",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.ClickingMessageButtonStepDefs.user_clicks_Message_button_on_the_top_dashboard()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 57000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User clicks mention icon",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.AddingMentionStepDefs.user_clicks_mention_icon()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4069000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User selects an email",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.AddingMentionStepDefs.user_selects_an_email()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2063000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Email is displayed in the message box",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.AddingMentionStepDefs.emailIsDisplayedInTheMessageBox()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@ZULL-798"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      }
-    ],
-    "name": "",
-    "description": "",
-    "id": "",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AddingMention.feature",
-    "tags": []
-  },
-  {
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-12-05T06:57:18.006Z",
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4019000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-07T05:05:31.068Z",
         "before": [
           {
             "result": {
-              "duration": 1665000000,
+              "duration": 2555000000,
               "status": "passed"
             },
             "match": {
@@ -246,13 +37,13 @@
           }
         ],
         "line": 24,
-        "name": "User should be able to remove field",
+        "name": "selecting multiple contacts",
         "description": "",
-        "id": "filter-and-search-functionality-on-active-stream;user-should-be-able-to-remove-field",
+        "id": ";selecting-multiple-contacts",
         "after": [
           {
             "result": {
-              "duration": 113000000,
+              "duration": 127000000,
               "status": "passed"
             },
             "match": {
@@ -265,97 +56,134 @@
         "steps": [
           {
             "result": {
-              "duration": 3754000000,
+              "duration": 3514000000,
               "status": "passed"
             },
             "line": 25,
-            "name": "User logs in with valid credentials",
+            "name": "User navigates to \"More\" \"Announcement\"",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+              "arguments": [
+                {
+                  "val": "\"More\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Announcement\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.addUsersStef.user_navigates_to(java.lang.String,java.lang.String)"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 2087000000,
+              "duration": 57000000,
               "status": "passed"
             },
             "line": 26,
-            "name": "User click on Filter and search box",
+            "name": "clicks Add Mention icon",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_click_on_Filter_and_search_box()"
+              "location": "com.CRM_7.stepDefinitions.addUsersStef.clicks_Add_Mention_icon()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2053000000,
+              "duration": 208000000,
               "status": "passed"
             },
             "line": 27,
-            "name": "User click on add field button",
+            "name": "clicks Employees and Departments",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_click_on_add_field_button()"
+              "location": "com.CRM_7.stepDefinitions.addUsersStef.clicks_Employees_and_Departments()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 45000000,
+              "duration": 539000000,
               "status": "passed"
             },
             "line": 28,
-            "name": "User deselect \"Date\" field",
+            "name": "User selects \"Ginger Cat\" and \"HR3 USER\" from Employees and Departments contact lists",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Date\"",
-                  "offset": 14
+                  "val": "\"Ginger Cat\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"HR3 USER\"",
+                  "offset": 30
                 }
               ],
-              "location": "com.CRM_7.stepDefinitions.FilterAndSearchStepDefs.user_deselect_field(java.lang.String)"
+              "location": "com.CRM_7.stepDefinitions.addUsersStef.user_selects_and_from_Employees_and_Departments_contact_lists(java.lang.String,java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "The input box should show descriptions containing \"Ginger Cat\" and \"HR3 USER\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ginger Cat\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"HR3 USER\"",
+                  "offset": 67
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.addUsersStef.the_input_box_should_show_descriptions_containing_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@FilterAndSearch"
+            "name": "@ZULL-824"
           },
           {
-            "name": "@ZULL-813"
+            "name": "@ZULL-818"
           },
           {
-            "name": "@smoke"
+            "name": "@ZULL-823"
           }
         ]
-      }
-    ],
-    "name": "Filter and search functionality on Active Stream",
-    "description": "",
-    "id": "filter-and-search-functionality-on-active-stream",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/FilterAndSearch.feature",
-    "tags": [
+      },
       {
-        "name": "@FilterAndSearch",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3623000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
       {
-        "start_timestamp": "2021-12-05T06:57:27.734Z",
+        "start_timestamp": "2021-12-07T05:05:42.242Z",
         "before": [
           {
             "result": {
-              "duration": 1806000000,
+              "duration": 1903000000,
               "status": "passed"
             },
             "match": {
@@ -363,14 +191,14 @@
             }
           }
         ],
-        "line": 26,
-        "name": "User should be able to send tasks",
+        "line": 44,
+        "name": "attach a link",
         "description": "",
-        "id": "as-a-user--i-should-be-able-to-assign-tasks-under-the-quick-navigate-menu;user-should-be-able-to-send-tasks",
+        "id": ";attach-a-link",
         "after": [
           {
             "result": {
-              "duration": 121000000,
+              "duration": 141000000,
               "status": "passed"
             },
             "match": {
@@ -383,113 +211,432 @@
         "steps": [
           {
             "result": {
-              "duration": 3685000000,
+              "duration": 3536000000,
               "status": "passed"
             },
-            "line": 27,
-            "name": "User logs in with valid credentials",
+            "line": 45,
+            "name": "User navigates to \"More\" \"Announcement\"",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1061000000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "User clicks the Task on the top",
-            "match": {
-              "location": "com.CRM_7.stepDefinitions.TaskMenuStepDefs.userClicksTheTaskOnTheTop()"
+              "arguments": [
+                {
+                  "val": "\"More\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Announcement\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.addUsersStef.user_navigates_to(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 312000000,
+              "duration": 77000000,
               "status": "passed"
             },
-            "line": 29,
-            "name": "User enter the message on the editor text bar \"Chapter1 \"",
+            "line": 46,
+            "name": "clicks Link icon",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Chapter1 \"",
-                  "offset": 46
-                }
-              ],
-              "location": "com.CRM_7.stepDefinitions.TaskMenuStepDefs.userEnterTheMessageOnTheEditorTextBar(java.lang.String)"
+              "location": "com.CRM_7.stepDefinitions.AttachLinkStef.clicks_Link_icon()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3695000000,
+              "duration": 80000000,
               "status": "passed"
             },
-            "line": 30,
-            "name": "User select the responsible person \"hr66@cybertekschool.com\"",
+            "line": 47,
+            "name": "enters \"zerobankApp\" in the text input box",
             "match": {
               "arguments": [
                 {
-                  "val": "\"hr66@cybertekschool.com\"",
-                  "offset": 35
+                  "val": "\"zerobankApp\"",
+                  "offset": 7
                 }
               ],
-              "location": "com.CRM_7.stepDefinitions.TaskMenuStepDefs.userSelectTheResponsiblePerson(java.lang.String)"
+              "location": "com.CRM_7.stepDefinitions.AttachLinkStef.enters_in_the_text_input_box(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 99000000,
+              "duration": 83000000,
               "status": "passed"
             },
-            "line": 31,
-            "name": "User clicks the send button",
+            "line": 48,
+            "name": "copy paste \"http://zero.webappsecurity.com\" in the link input box",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.TaskMenuStepDefs.userClicksTheSendButton()"
+              "arguments": [
+                {
+                  "val": "\"http://zero.webappsecurity.com\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.AttachLinkStef.copy_paste_in_the_link_input_box(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5026000000,
+              "duration": 3068000000,
               "status": "passed"
             },
-            "line": 32,
-            "name": "Verify that user send task successfully and display \"Task has been created\"",
+            "line": 49,
+            "name": "clicks Save",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.AttachLinkStef.clicks_Save()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5058000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "clicks Send",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.AttachLinkStef.clicks_Send()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8125000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "clicks zerobankApp",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.AttachLinkStef.clicks_zerobankApp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "the page and the title contains \"Zero - Personal Banking - Loans - Credit Cards\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Task has been created\"",
-                  "offset": 52
+                  "val": "\"Zero - Personal Banking - Loans - Credit Cards\"",
+                  "offset": 32
                 }
               ],
-              "location": "com.CRM_7.stepDefinitions.TaskMenuStepDefs.verifyThatUserSendTaskSuccessfullyAndDisplay(java.lang.String)"
+              "location": "com.CRM_7.stepDefinitions.AttachLinkStef.the_page_and_the_title_contains(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@ZULL-824"
           },
           {
-            "name": "@smoke"
+            "name": "@ZULL-819"
+          },
+          {
+            "name": "@ZULL-823"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3655000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-07T05:06:07.945Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1848000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 67,
+        "name": "create a quote",
+        "description": "",
+        "id": ";create-a-quote",
+        "after": [
+          {
+            "result": {
+              "duration": 136000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3530000000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "User navigates to \"More\" \"Announcement\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"More\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Announcement\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.addUsersStef.user_navigates_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2069000000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "clicks quote test icon",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.QuoteStef.clicks_quote_test_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 194000000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "enter \"crm project\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"crm project\"",
+                  "offset": 6
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.QuoteStef.enter(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5069000000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "clicks Send",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.AttachLinkStef.clicks_Send()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4030000000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "the text \"crm project\" should be displayed on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"crm project\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.QuoteStef.the_text_should_be_displayed_on_the_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ZULL-824"
+          },
+          {
+            "name": "@ZULL-820"
+          },
+          {
+            "name": "@ZULL-823"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3582000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-07T05:06:28.483Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1740000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 85,
+        "name": "send an announcement",
+        "description": "",
+        "id": ";send-an-announcement",
+        "after": [
+          {
+            "result": {
+              "duration": 129000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3522000000,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "User navigates to \"More\" \"Announcement\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"More\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Announcement\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.addUsersStef.user_navigates_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3093000000,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "enters \"cest la vie\" in the Announcement input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cest la vie\"",
+                  "offset": 7
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.AnnouncementStef.enters_in_the_Announcement_input_box(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5058000000,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "clicks Send",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.AttachLinkStef.clicks_Send()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4034000000,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "the textt \"cest la vie\" should be displayed on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cest la vie\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.CRM_7.stepDefinitions.AnnouncementStef.the_textt_should_be_displayed_on_the_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ZULL-824"
+          },
+          {
+            "name": "@ZULL-821"
+          },
+          {
+            "name": "@ZULL-823"
           }
         ]
       }
     ],
-    "name": "As a user, I should be able to assign tasks under the Quick Navigate Menu",
+    "name": "",
     "description": "",
-    "id": "as-a-user--i-should-be-able-to-assign-tasks-under-the-quick-navigate-menu",
+    "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/TaskMenu.feature",
+    "uri": "file:src/test/resources/features/1_ZULL-822.feature",
     "tags": [
       {
-        "name": "@login",
+        "name": "@ZULL-824",
         "type": "Tag",
         "location": {
           "line": 1,
