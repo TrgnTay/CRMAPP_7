@@ -32,8 +32,8 @@ public class MRT_TC04_StepDefinitions {
 
         BrowserUtils.waitFor(2);
 
-        String expectedText="";
-        String actualText= MrtEvent.EventName.getText(); // dummy assertion here. .getText() does not retrieve the visible text...
+        String expectedText=""; // visible text is hidden so its value is empty
+        String actualText= MrtEvent.EventName.getText();
         Assert.assertEquals("NOT matched",expectedText,actualText);
 
         MrtEvent.SendBtn.click();

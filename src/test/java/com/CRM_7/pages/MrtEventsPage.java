@@ -5,10 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class MrtEventsPage extends BasePage {
     public MrtEventsPage(){
         PageFactory.initElements(Driver.get(), this);
     }
+
+    @FindBy(xpath = "//td[@class=\"feed-cal-addit-left-c\"] ")
+    public List<WebElement> EventDetails;
 
     @FindBy(xpath = "//button[@id=\"blog-submit-button-save\"]")
     public WebElement SendBtn;
@@ -22,7 +27,7 @@ public class MrtEventsPage extends BasePage {
     @FindBy(xpath = "//span[@class=\"feed-event-more-link-text\"][1]")
     public WebElement MoreLink;
 
-    @FindBy(xpath = "//input[@id=\"event-locationcal_3Jcl\"]")
+    @FindBy(xpath = "//div[@id=\"popup-window-content-cal_3Jcl_loc_mr\"]")
     public WebElement EventLocation;
 
     @FindBy(xpath = "//span[@id=\"feed-add-post-form-tab-calendar\"]")

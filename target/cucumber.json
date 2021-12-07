@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-12-07T03:10:30.716Z",
+        "start_timestamp": "2021-12-07T04:04:01.808Z",
         "before": [
           {
             "result": {
-              "duration": 2516000000,
+              "duration": 2432000000,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 3,
-        "name": "MRT_TC04 User selects events location",
+        "name": "MRT_TC02 User selects events location",
         "description": "",
-        "id": "mrt-tc04-user-selects-events-location;mrt-tc04-user-selects-events-location",
+        "id": "mrt-tc02-user-selects-events-location;mrt-tc02-user-selects-events-location",
         "after": [
           {
             "result": {
-              "duration": 143000000,
+              "duration": 123000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3737000000,
+              "duration": 3730000000,
               "status": "passed"
             },
             "line": 4,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 2066000000,
+              "duration": 2100000000,
               "status": "passed"
             },
             "line": 5,
@@ -59,32 +59,66 @@
           },
           {
             "result": {
-              "duration": 7189000000,
+              "duration": 2096000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "User should be able to send a message",
+            "name": "User should be able to click on More to see the event details",
             "match": {
-              "location": "com.CRM_7.stepDefinitions.MRT_TC04_StepDefinitions.user_should_be_able_to_send_a_message()"
+              "location": "com.CRM_7.stepDefinitions.MRT_TC03_StepDefinitions.user_should_be_able_to_click_on_More_to_see_the_event_details()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should be able to see event details parameters as follows",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.MRT_TC02_StepDefinitions.user_should_be_able_to_see_event_details_parameters_as_follows(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Availability"
+                ]
+              },
+              {
+                "cells": [
+                  "Repeat"
+                ]
+              },
+              {
+                "cells": [
+                  "Calendar"
+                ]
+              },
+              {
+                "cells": [
+                  "Importance"
+                ]
+              }
+            ],
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@MRT_TC04"
+            "name": "@MRT_TC02"
           }
         ]
       }
     ],
-    "name": "MRT_TC04 User selects events location",
+    "name": "MRT_TC02 User selects events location",
     "description": "",
-    "id": "mrt-tc04-user-selects-events-location",
+    "id": "mrt-tc02-user-selects-events-location",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/MRT_TC04.feature",
+    "uri": "file:src/test/resources/features/MRT_TC02.feature",
     "tags": [
       {
-        "name": "@MRT_TC04",
+        "name": "@MRT_TC02",
         "type": "Tag",
         "location": {
           "line": 1,
