@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CRM_7" />
+        <module name="CRM_7Steff" />
       </profile>
     </annotationProcessing>
   </component>
