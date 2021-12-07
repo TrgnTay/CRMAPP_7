@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 
 public class AppreciationPage {
     public AppreciationPage() {
@@ -14,14 +16,14 @@ public class AppreciationPage {
     @FindBy(id = "bx-b-mention-blogPostForm")
     public WebElement mention;
 
-    @FindBy(id = "feed-add-post-destination-input")
+    @FindBy(xpath = "//a[text()='Add more']")
     public WebElement addMore;
 
-    @FindBy(css = "a[class='bx-finder-box-tab bx-lm-tab-department']")
+    @FindBy(xpath = "//a[starts-with(@id,'destDepartmentTab_')]")
     public WebElement employeesAndDepartments;
 
-    @FindBy(xpath = "//div[text() = 'hr76@cybertekschool.com']")
-    public WebElement hr76;
+    @FindBy(xpath = "//div[text() = 'hr78@cybertekschool.com']")
+    public WebElement hr78;
 
     @FindBy(css = "span[title='Link']")
     public WebElement link;
@@ -37,15 +39,32 @@ public class AppreciationPage {
 
     @FindBy(xpath = "(//iframe)[1]")
     public WebElement linkIframe;
+    @FindBy(css = "a[title^=\"Link\"]")
+    public WebElement link1;
+
+    @FindBy(css = "a[href='hvhv']")
+    public WebElement insertedLink;
 
     @FindBy(css = "span[title='Quote text']")
     public WebElement quote;
 
-    @FindBy(xpath = "//iframe[@class='bx-editor-iframe']")
+    @FindBy(xpath = "//blockquote[@class='bxhtmled-quote']")
     public WebElement blockQuote;
+
+    @FindBy(xpath = "//div[@class='bx-finder-company-department-employee-name']")
+    public List<WebElement> ContactsList;
+
+    @FindBy ( xpath = "//body[@style='min-height: 184px;']")
+    public WebElement messageBox;
 
     @FindBy(id = "blog-submit-button-save")
     public WebElement send;
 
+    @FindBy(id= "feed-add-post-destination-container")
+    public WebElement container;
+
+    public void swapToIframe(){
+        Driver.get().switchTo().frame(0);
+    }
 
 }
