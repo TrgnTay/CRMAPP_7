@@ -9,7 +9,7 @@ Feature: As a user, I should be able to assign tasks under the Quick Navigate Me
     And User clicks on the High Priority checkbox
     Then Verify that the user clicks successfully
 
-  @ZULL-836
+  @ZULL-836 @smoke
   Scenario: TC02-User should be able to click on Visual Editor and see the editor text bar displays on top of the message box.
     Given User logs in with valid credentials
     When User clicks the Task on the top
