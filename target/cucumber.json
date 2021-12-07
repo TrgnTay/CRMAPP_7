@@ -3,11 +3,32 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-12-07T04:04:01.808Z",
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3963000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-07T04:27:33.856Z",
         "before": [
           {
             "result": {
-              "duration": 2432000000,
+              "duration": 2508000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +36,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "MRT_TC02 User selects events location",
+        "line": 20,
+        "name": "MRT_TC01 User sets reminder",
         "description": "",
-        "id": "mrt-tc02-user-selects-events-location;mrt-tc02-user-selects-events-location",
+        "id": ";mrt-tc01-user-sets-reminder",
         "after": [
           {
             "result": {
-              "duration": 123000000,
+              "duration": 128000000,
               "status": "passed"
             },
             "match": {
@@ -35,22 +56,99 @@
         "steps": [
           {
             "result": {
-              "duration": 3730000000,
+              "duration": 2069000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 21,
+            "name": "user clicks Event icon",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.MRT_TC01_StepDefinitions.user_clicks_Event_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user should be able to set a reminder",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.MRT_TC01_StepDefinitions.user_should_be_able_to_set_a_reminder()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ZULL-839"
+          },
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@ZULL-826"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3637000000,
+              "status": "passed"
+            },
+            "line": 6,
             "name": "User logs in with valid credentials",
             "match": {
               "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
             },
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-07T04:27:42.624Z",
+        "before": [
           {
             "result": {
-              "duration": 2100000000,
+              "duration": 1741000000,
               "status": "passed"
             },
-            "line": 5,
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "MRT_TC02 User should be able to see event details parameters as Availability, Repeat, Calendar, Importance",
+        "description": "",
+        "id": ";mrt-tc02-user-should-be-able-to-see-event-details-parameters-as-availability--repeat--calendar--importance",
+        "after": [
+          {
+            "result": {
+              "duration": 122000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2064000000,
+              "status": "passed"
+            },
+            "line": 36,
             "name": "user clicks Event icon",
             "match": {
               "location": "com.CRM_7.stepDefinitions.MRT_TC01_StepDefinitions.user_clicks_Event_icon()"
@@ -62,7 +160,7 @@
               "duration": 2096000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 37,
             "name": "User should be able to click on More to see the event details",
             "match": {
               "location": "com.CRM_7.stepDefinitions.MRT_TC03_StepDefinitions.user_should_be_able_to_click_on_More_to_see_the_event_details()"
@@ -71,10 +169,10 @@
           },
           {
             "result": {
-              "duration": 185000000,
+              "duration": 163000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 38,
             "name": "User should be able to see event details parameters as follows",
             "match": {
               "location": "com.CRM_7.stepDefinitions.MRT_TC02_StepDefinitions.user_should_be_able_to_see_event_details_parameters_as_follows(java.util.List\u003cjava.lang.String\u003e)"
@@ -106,23 +204,215 @@
         ],
         "tags": [
           {
-            "name": "@MRT_TC02"
+            "name": "@ZULL-839"
+          },
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@ZULL-829"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3648000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-07T04:27:52.450Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1790000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 55,
+        "name": "MRT_TC03 User clicks on more to see event",
+        "description": "",
+        "id": ";mrt-tc03-user-clicks-on-more-to-see-event",
+        "after": [
+          {
+            "result": {
+              "duration": 119000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2062000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user clicks Event icon",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.MRT_TC01_StepDefinitions.user_clicks_Event_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2092000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "User should be able to click on More to see the event details",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.MRT_TC03_StepDefinitions.user_should_be_able_to_click_on_More_to_see_the_event_details()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ZULL-839"
+          },
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@ZULL-830"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3661000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-07T04:28:02.166Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1716000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 70,
+        "name": "MRT_TC04 User send messages",
+        "description": "",
+        "id": ";mrt-tc04-user-send-messages",
+        "after": [
+          {
+            "result": {
+              "duration": 138000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2057000000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "user clicks Event icon",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.MRT_TC01_StepDefinitions.user_clicks_Event_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7181000000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "User should be able to send a message",
+            "match": {
+              "location": "com.CRM_7.stepDefinitions.MRT_TC04_StepDefinitions.user_should_be_able_to_send_a_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ZULL-839"
+          },
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@ZULL-832"
           }
         ]
       }
     ],
-    "name": "MRT_TC02 User selects events location",
+    "name": "",
     "description": "",
-    "id": "mrt-tc02-user-selects-events-location",
+    "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/MRT_TC02.feature",
+    "uri": "file:src/test/resources/features/1_ZULL-828.feature",
     "tags": [
       {
-        "name": "@MRT_TC02",
+        "name": "@ZULL-839",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@CRM",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 11
         }
       }
     ]
