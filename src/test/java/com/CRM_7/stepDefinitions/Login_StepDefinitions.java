@@ -30,6 +30,5 @@ import org.junit.Assert;
             Assert.assertTrue(actualUrl.contains(expectedUrl));
         }
 
-
     }
 
