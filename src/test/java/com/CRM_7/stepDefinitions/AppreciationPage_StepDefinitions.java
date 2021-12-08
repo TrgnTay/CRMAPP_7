@@ -1,6 +1,6 @@
 package com.CRM_7.stepDefinitions;
 
-import com.CRM_7.pages.ActivityStreamPage;
+import com.CRM_7.pages.ActivityStreamPage1;
 import com.CRM_7.pages.AppreciationPage;
 import com.CRM_7.utilities.BrowserUtils;
 import com.CRM_7.utilities.Driver;
@@ -13,7 +13,7 @@ import org.openqa.selenium.By;
 
 public class AppreciationPage_StepDefinitions {
     AppreciationPage appreciationPage = new AppreciationPage();
-    ActivityStreamPage activityStreamPage = new ActivityStreamPage();
+    ActivityStreamPage1 activityStreamPage = new ActivityStreamPage1();
 
     @Given("Navigate to Appreciation module")
     public void navigateToAppreciationModule() {
@@ -115,4 +115,11 @@ public class AppreciationPage_StepDefinitions {
         String box = Driver.get().findElement(By.xpath("html[1]/body[1]")).getText();
         Assert.assertTrue(box.contains("youtube"));
     }
+
+//    @Then("link text which is {string} should be displayed")
+//    public void linkTextWhichIsShouldBeDisplayed(String linktext) {
+//        appreciationPage.swapToIframe();
+//        String box = Driver.get().findElement(By.xpath("html[1]/body[1]")).getText();
+//        Assert.assertTrue(box.equals(linktext));
+//    }
 }
