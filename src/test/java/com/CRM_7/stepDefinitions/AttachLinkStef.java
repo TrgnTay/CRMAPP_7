@@ -1,6 +1,6 @@
 package com.CRM_7.stepDefinitions;
 
-import com.CRM_7.pages.PortalPage;
+import com.CRM_7.pages.PortalPage1;
 import com.CRM_7.utilities.BrowserUtils;
 import com.CRM_7.utilities.Driver;
 import io.cucumber.java.en.Then;
@@ -16,7 +16,7 @@ public class AttachLinkStef {
     @When("clicks Link icon")
     public void clicks_Link_icon() {
 
-        new PortalPage().linkIcon.click();
+        new PortalPage1().linkIcon.click();
     }
 
     @When("enters {string} in the text input box")
@@ -29,25 +29,25 @@ public class AttachLinkStef {
     public void copy_paste_in_the_link_input_box(String string2) {
 
 
-        new PortalPage().linkUrl.sendKeys(string2);
+        new PortalPage1().linkUrl.sendKeys(string2);
     }
 
     @When("clicks Save")
     public void clicks_Save() {
 
-        new PortalPage().Save.click();
+        new PortalPage1().Save.click();
         BrowserUtils.waitFor(3);
     }
 
     @When("clicks Send")
     public void clicks_Send() {
-        new PortalPage().Send.click();
+        new PortalPage1().Send.click();
         BrowserUtils.waitFor(5);
 
     }
     @When("clicks zerobankApp")
     public void clicks_zerobankApp() {
-        new PortalPage().zeroBankLink.click();
+        new PortalPage1().zeroBankLink.click();
         BrowserUtils.waitFor(8);
 
         String currentWindowHandle = Driver.get().getWindowHandle();

@@ -1,6 +1,6 @@
 package com.CRM_7.stepDefinitions;
 
-import com.CRM_7.pages.PortalPage;
+import com.CRM_7.pages.PortalPage1;
 import com.CRM_7.utilities.BrowserUtils;
 import com.CRM_7.utilities.Driver;
 import io.cucumber.java.en.Then;
@@ -15,7 +15,7 @@ import java.util.List;
 public class addUsersStef {
     @When("User navigates to {string} {string}")
     public void user_navigates_to(String tab, String module) {
-        new PortalPage().navigateToModule(tab, module);
+        new PortalPage1().navigateToModule(tab, module);
         BrowserUtils.waitFor(3);
     }
 
@@ -23,11 +23,11 @@ public class addUsersStef {
     public void clicks_Add_Mention_icon() {
 
         //new PortalPage().AdMtion();
-        new PortalPage().AddMention.click();
+        new PortalPage1().AddMention.click();
     }
     @When("clicks Employees and Departments")
     public void clicks_Employees_and_Departments() {
-        new PortalPage().setdropdownElement();
+        new PortalPage1().setdropdownElement();
     }
     @When("User selects {string} and {string} from Employees and Departments contact lists")
     public void user_selects_and_from_Employees_and_Departments_contact_lists(String expectedUser1, String expectedUser2) throws InterruptedException {
@@ -35,7 +35,7 @@ public class addUsersStef {
 
         Driver.get().findElement(By.id("bx-destination-tag")).click();
 
-        new PortalPage().setdropdownElement();
+        new PortalPage1().setdropdownElement();
 
         Driver.get().findElement(By.xpath("//div[.='"+expectedUser2+"'][@class='bx-finder-company-department-employee-name']")).click();
     }

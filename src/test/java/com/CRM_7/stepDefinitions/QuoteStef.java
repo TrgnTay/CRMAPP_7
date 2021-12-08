@@ -1,6 +1,6 @@
 package com.CRM_7.stepDefinitions;
 
-import com.CRM_7.pages.PortalPage;
+import com.CRM_7.pages.PortalPage1;
 import com.CRM_7.utilities.BrowserUtils;
 import com.CRM_7.utilities.Driver;
 import io.cucumber.java.en.Then;
@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
 public class QuoteStef {
     @When("clicks quote test icon")
     public void clicks_quote_test_icon() {
-       new PortalPage().quotebtn.click();
+       new PortalPage1().quotebtn.click();
         BrowserUtils.waitFor(2);
     }
 

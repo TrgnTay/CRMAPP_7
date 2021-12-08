@@ -1,6 +1,6 @@
 package com.CRM_7.stepDefinitions;
 
-import com.CRM_7.pages.PortalPage;
+import com.CRM_7.pages.PortalPage1;
 import com.CRM_7.utilities.BrowserUtils;
 import com.CRM_7.utilities.Driver;
 import io.cucumber.java.en.Then;
@@ -12,7 +12,7 @@ public class AnnouncementStef {
     @When("enters {string} in the Announcement input box")
     public void enters_in_the_Announcement_input_box(String string1) {
         Driver.get().switchTo().frame(Driver.get().findElement(By.xpath("//iframe[@class='bx-editor-iframe']")));
-        new PortalPage().announceBtn.sendKeys(string1);
+        new PortalPage1().announceBtn.sendKeys(string1);
         BrowserUtils.waitFor(3);
         Driver.get().switchTo().defaultContent();
     }
