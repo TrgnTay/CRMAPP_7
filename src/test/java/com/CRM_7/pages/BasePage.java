@@ -1,72 +1,72 @@
 package com.CRM_7.pages;
 
-import org.junit.Assert;
+import com.CRM_7.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.CRM_7.utilities.Driver;
-import static com.CRM_7.utilities.Driver.get;
 
-
-public abstract class BasePage {
-    public BasePage(){
+public class BasePage {
+    public BasePage() {
         PageFactory.initElements(Driver.get(),this);
     }
-    @FindBy (xpath = "//*[@title='Tasks']")
+
+    @FindBy(xpath = "//*[@title='Tasks']")
     public WebElement Tasks;
 
-    @FindBy (xpath = "//*[@title='Chat and Calls']")
+    @FindBy(xpath = "//*[@title='Chat and Calls']")
     public WebElement Chat_and_Calls;
 
-    @FindBy (xpath = "//*[@title='Workgroups']")
+    @FindBy(xpath = "//*[@title='Workgroups']")
     public WebElement WorkGroups;
 
-    @FindBy (xpath = "//*[@title='Drive']")
+    @FindBy(xpath = "//*[@title='Drive']")
     public WebElement Drive;
 
-    @FindBy (xpath = "//*[@title='Calendar']")
+    @FindBy(xpath = "//*[@title='Calendar']")
     public WebElement Calendar;
 
-    @FindBy (xpath = "//*[@title='Mail']")
+    @FindBy(xpath = "//*[@title='Mail']")
     public WebElement Mail;
 
-    @FindBy (xpath = "//*[@title='Contact Center']")
+    @FindBy(xpath = "//*[@title='Contact Center']")
     public WebElement ContactCenter;
 
-    @FindBy (xpath = "//*[@title='Time and Reports']")
+    @FindBy(xpath = "//*[@title='Time and Reports']")
     public WebElement TimeandReports;
 
-    @FindBy (xpath = "//*[@title='Employees']")
+    @FindBy(xpath = "//*[@title='Employees']")
     public WebElement Employees;
 
-    @FindBy (xpath = "//*[@title='Services']")
+    @FindBy(xpath = "//*[@title='Services']")
     public WebElement Services;
 
-    @FindBy (xpath = "//*[@title='Company']")
+    @FindBy(xpath = "//*[@title='Company']")
     public WebElement Company;
 
-    @FindBy (id = "left-menu-more-btn")
+    @FindBy(id = "left-menu-more-btn")
     public WebElement More_LeftMenu;
 
-    @FindBy (xpath = "//*[@title='Applications']")
+    @FindBy(xpath = "//*[@title='Applications']")
     public WebElement Applications;
 
-    @FindBy (xpath = "//*[@title='Workflows']")
+    @FindBy(xpath = "//*[@title='Workflows']")
     public WebElement Workflows;
 
-    @FindBy (xpath = "//*[.='Message']")
+    @FindBy(xpath = "//*[.='Message']")
     public WebElement Message;
 
-    @FindBy (id = "feed-add-post-form-tab-tasks")
+    @FindBy(id = "feed-add-post-form-tab-tasks")
     public WebElement Task;
 
-    @FindBy (id = "feed-add-post-form-tab-calendar")
+    @FindBy(id = "feed-add-post-form-tab-calendar")
     public WebElement Event;
 
-    @FindBy (id = "feed-add-post-form-tab-vote")
+    @FindBy(id = "feed-add-post-form-tab-vote")
     public WebElement Poll;
 
-    @FindBy(id= "feed-add-post-form-link-text")
+    @FindBy(id = "feed-add-post-form-link-text")
     public WebElement More2;
 
 }
+
+
